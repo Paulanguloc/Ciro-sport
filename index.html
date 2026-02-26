@@ -1,1 +1,941 @@
-<!DOCTYPE html> <html lang="es"> <head> <meta property="og:title" content="Ciro Sport - Tienda Deportiva"><meta property="og:description" content="Tienda deportiva, camisetas y más. ¡Contáctenos!"><meta property="og:image" content="https://res.cloudinary.com/dlz6uc574/image/upload/v1771649387/Photoroom-20251123_215209030_blbzzk.png"><meta property="og:url" content="https://paulanguloc.github.io/Ciro-sport"><meta property="og:type" content="website"><meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Ciro Sport - fitness style</title> <style> :root{--accent:#00ff88;} body{margin:0;font-family:Arial,sans-serif;background:#000;color:#fff;overflow-x:hidden;} header{position:sticky;top:0;z-index:2000;background:#000;padding:14px;display:flex;justify-content:space-between;align-items:center;border-bottom:2px solid var(--accent);} .logo{color:var(--accent);font-weight:bold;font-size:24px;} .menu-btn,.cart-btn{font-size:26px;color:var(--accent);cursor:pointer;position:relative;} .cart-count{position:absolute;top:-6px;right:-10px;background:var(--accent);color:#000;font-size:12px;border-radius:12px;padding:2px 6px;display:none;} nav{position:fixed;top:0;left:-100%;width:260px;height:100%;background:#111;transition:.3s;z-index:3000;} .menu-header{text-align:center;padding:20px;border-bottom:1px solid #222;} .menu-logo{width:80px;height:80px;border-radius:50%;background:#1b1b1b url('https://res.cloudinary.com/dlz6uc574/image/upload/v1771649387/Photoroom-20251123_215209030_blbzzk.png') center/cover no-repeat;margin:auto;border:2px solid var(--accent);} nav a{display:block;padding:15px;color:#fff;text-decoration:none;border-bottom:1px solid #222;} nav a:hover{background:var(--accent);color:#000;} .overlay{position:fixed;inset:0;background:#000a;display:none;z-index:2500;} .container{padding:18px;} .section-title{color:var(--accent);font-size:22px;margin:10px 0 18px 0;font-weight:bold;} .product{background:#111;border-radius:16px;margin-bottom:25px;padding:14px;box-shadow:0 0 12px #00ff8833;transition:transform 0.3s,box-shadow 0.3s;} .product:hover{transform:translateY(-5px);box-shadow:0 15px 30px rgba(0,255,136,0.5);} .product h2{margin:6px 0 10px 0;} .price{color:var(--accent);font-size:20px;margin:10px 0;font-weight:bold;} button,input{padding:10px;margin:6px 0;border-radius:10px;border:none;font-size:16px;} button{cursor:pointer;width:100%;} input[type=number]{-moz-appearance:textfield;} input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0;} .carousel{position:relative;overflow:hidden;border-radius:14px;margin-bottom:15px;touch-action:pan-x;} .carousel-track{display:flex;transition:transform .35s ease;} .carousel-track img{width:100%;flex-shrink:0;border-radius:12px;margin-right:5px;} .carousel-controls{position:absolute;top:50%;width:100%;display:flex;justify-content:space-between;transform:translateY(-50%);} .carousel-controls span{background:#000a;color:var(--accent);padding:8px 12px;font-size:20px;cursor:pointer;} #modal{position:fixed;inset:0;background:#000c;display:none;align-items:center;justify-content:center;z-index:4000;} .modal-content{background:#101010;padding:20px;border-radius:16px;width:92%;max-width:420px;} .close{float:right;color:var(--accent);font-size:22px;cursor:pointer;} .whatsapp-float{position:fixed;bottom:16px;right:16px;background:#25D366;color:#fff;font-size:26px;padding:16px;border-radius:50%;text-decoration:none;box-shadow:0 0 18px #25D366aa;z-index:1500;} .galeria-horizontal{display:flex;overflow-x:auto;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;margin-bottom:20px;} .galeria-horizontal img{flex:0 0 auto;width:200px;height:200px;object-fit:cover;border-radius:15px;cursor:pointer;border:2px solid var(--accent);margin-right:10px;transition:transform 0.3s,box-shadow 0.3s;} .galeria-horizontal img:hover{transform:scale(1.05);box-shadow:0 10px 25px rgba(0,255,136,0.5);} .galeria-horizontal::-webkit-scrollbar{display:none;} .color-btn{display:inline-block;padding:6px 12px;margin:4px;border-radius:8px;border:2px solid #fff;cursor:pointer;background:#222;color:#fff;font-weight:bold;user-select:none;transition:0.2s;} .color-btn.selected{border:3px solid var(--accent);background:var(--accent);color:#000;position:relative;} .color-btn.selected::after{content:"✔";position:absolute;top:-6px;right:-6px;background:#fff;color:#000;border-radius:50%;width:18px;height:18px;font-size:14px;text-align:center;line-height:18px;} .size-btn{display:inline-block;margin:4px;padding:8px 12px;border-radius:6px;border:1px solid #fff;cursor:pointer;transition:transform 0.2s;user-select:none;background:#222;color:#fff;font-weight:bold;} .size-btn.selected{background:var(--accent);color:#000;transform:scale(1.1);} .cant-container{display:flex;align-items:center;margin:6px 0;} .cant-container button{width:32px;height:32px;padding:0;margin:0;background:#222;color:#fff;font-weight:bold;border-radius:6px;cursor:pointer;font-size:20px;} .cant-container input{text-align:center;width:50px;margin:0 6px;border-radius:6px;background:#222;color:#fff;font-weight:bold;border:none;} footer{margin-top:30px;text-align:center;color:#00ff88;font-weight:bold;padding:20px;border-top:2px solid var(--accent);} </style> </head> <body> <div style="text-align:center; padding:15px; background:#00ff88;"><p style="font-weight:bold; font-size:18px; color:#000; margin-bottom:8px;">Contáctenos</p><a href="https://www.instagram.com/tshir_t31?utm_source=qr&igsh=ZmdxajZqbWQ1b2Vq" target="_blank" style="margin:10px;"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" width="40" height="40" alt="Instagram"></a><a href="https://www.facebook.com/iwillcan.zung" target="_blank" style="margin:10px;"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" width="40" height="40" alt="Facebook"></a><a href="https://wa.me/50672028728" target="_blank" style="margin:10px;"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" width="40" height="40" alt="WhatsApp"></a></div><header> <div class="menu-btn" onclick="toggleMenu()">☰</div> <div class="logo">CIRO SPORT</div> <div class="cart-btn" onclick="toggleCart()">🛒<div class="cart-count" id="cartCount">0</div></div> </header> <div class="overlay" id="overlay" onclick="toggleMenu()"></div> <nav id="menu"> <div class="menu-header"> <div class="menu-logo"></div> <div style="color:#00ff88;font-weight:bold">CIRO SPORT</div> </div> <a href="#" onclick="goInicio()">Inicio</a> <a href="#promos" onclick="goPromos()">Promociones</a> <a href="#galeria" onclick="goGaleria()">Galería</a> <a href="#productos" onclick="goProductos()">Productos</a> </nav> <div class="container"> <!-- LOGO INICIO --> <div style="text-align:center;padding:20px 0 10px 0;"> <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771649387/Photoroom-20251123_215209030_blbzzk.png" style="max-width:220px;width:100%;border-radius:16px;"> </div> <!-- PROMOCIONES --> <div id="promos"> <div class="section-title">🔥 Promociones</div> <div class="product"><h2>Combo Camisetas Olímpicas</h2><p>3x₡20,000 | 6x₡30,000 | 10x₡45,000</p><div class="price">₡8,000 c/u</div></div> <div class="product"><h2>Combo Camisetas Oversize</h2><p>3x₡25,000</p><div class="price">₡12,000 c/u</div></div> <div class="product"><h2>Combo Camisetas Deportivas</h2><p>3x₡25,000</p><div class="price">₡8,000 c/u</div></div> <div class="product"><h2>Conjuntos Deportivos</h2><p>Unidad ₡20,000</p><div class="price">₡20,000</div></div> </div> <!-- GALERIA --> <div id="galeria"> <div class="section-title">📸 Galería</div> <div class="galeria-horizontal"> <!-- Olímpicas --> <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771643082/IMG_20260211_210919_uvpjmt.png"> <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771643079/IMG_20260211_210919_5_gowxms.png"> <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771643080/IMG_20260211_210919_1_tikcrp.png"> <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771643076/IMG_20260212_081532_1_ysp5po.png"> <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771643076/IMG_20260212_081532_3_nidlsp.png"> <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771645585/IMG_20260120_203107_4_cgpbi0.png"><img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771965990/dc822db6d18892fe68d182003df68e05_16_n9vcgk.png"><img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771965956/dc822db6d18892fe68d182003df68e05_12_nluswt.png"><img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771965955/dc822db6d18892fe68d182003df68e05_15_uwqohl.png"><img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771965954/dc822db6d18892fe68d182003df68e05_13_g7m9pa.png"><img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771965931/dc822db6d18892fe68d182003df68e05_17_dpb95k.png"><img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771965901/dc822db6d18892fe68d182003df68e05_19_scdrmm.png"><img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771965899/dc822db6d18892fe68d182003df68e05_20_zt979e.png"><img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771965900/dc822db6d18892fe68d182003df68e05_21_kehvre.png"><img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771965897/dc822db6d18892fe68d182003df68e05_22_diwlrv.png"><img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771965892/dc822db6d18892fe68d182003df68e05_23_pzoq8e.png"><img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771965867/IMG-20260224-WA0039_bwv62w.jpg"><img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771965863/IMG-20260224-WA0040_s6dbw3.jpg"><!-- Oversize --> <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771645776/Screenshot_20260103_144217_com_instagram_android_InstagramMainActivity_5_xsc59h.png"> <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771645355/6362f18afa2e9fef922b0c43ea94f871_trka37.png"> <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771645514/Screenshot_20260103_144217_com_instagram_android_InstagramMainActivity_3_gnnl1q.png"> <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771645795/Screenshot_20260103_144217_com_instagram_android_InstagramMainActivity_6_1_ivwbkj.png"> <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771645776/Screenshot_20260103_144217_com_instagram_android_InstagramMainActivity_6_q6eobs.png"> <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771645779/Screenshot_20260103_144217_com_instagram_android_InstagramMainActivity_4_cvp1ov.png"> <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771645794/Screenshot_20260103_144217_com_instagram_android_InstagramMainActivity_6_3_ybowg4.png"> <!-- Conjuntos --> <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771646079/Photoroom-20250224_235848_pillqf.png"> <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771646193/Photoroom-20250224_233715_elc9du.png"> <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771646017/Photoroom-20250225_000142_luy730.png"> <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771646019/Photoroom-20250224_235953_lzcedw.png"> <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771646052/Photoroom-20250225_000044_rakgft.png"> <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771646092/Photoroom-20250224_235917_llo27n.png"> <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771646178/Photoroom-20250224_233647_nnihan.png"> <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771646167/Photoroom-20250224_233613_ryjvcd.png"> <!-- Creatina --> <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771645882/IMG_20250531_150610_a8hlye.png"> <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771645871/IMG_20250530_124703_acwhpd.png"> <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771646321/IMG_20250604_154551_leznbs.png"> <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771646188/1754318027391_xckwfg.png"> <!-- Camisetas Deportivas --> <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771646007/Photoroom-20250301_223811_mpctyd.png"> <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771645955/Photoroom-20250301_223509_f8pykj.png"> <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771646038/IMG_20250404_210953_2_w6y9tr.png"> <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771645970/Photoroom-20250301_223643_i8npdv.png"> <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771645981/Photoroom-20250301_223716_fgxqr2.png"> <!-- Proteínas --> <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771646164/IMG-20250826-WA0008_ezryvm.png"> <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771646285/IMG-20250620-WA0021_fy6e0u.png"> <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771646251/IMG-20250620-WA0018_iinpf8.png"> <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771646205/IMG-20250826-WA0230_molicz.png"> <!-- Tenis --> <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771648158/IMG-20260212-WA0211_nwlbyj.jpg"> <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771648154/IMG-20260212-WA0214_huokan.jpg"> <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771648138/Screenshot_20260212_142115_com_whatsapp_StatusPlaybackActivity_nupuhq.jpg"> <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771648133/Screenshot_20260212_142137_com_whatsapp_StatusPlaybackActivity_fggfal.jpg"> <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771648138/IMG-20260212-WA0209_ihassa.jpg"> <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771648127/Screenshot_20260205_142559_com_whatsapp_StatusPlaybackActivity_lgkrnz.jpg"> <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771648131/Screenshot_20260205_142607_com_whatsapp_StatusPlaybackActivity_y0r8ja.jpg"> <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771648117/Screenshot_20260205_142603_com_whatsapp_StatusPlaybackActivity_ozk60q.jpg"> </div> </div> <!-- PRODUCTOS --> <div id="productos"> <div class="section-title">🛍 Productos</div> </div> </div> <!-- MODAL CARRITO --> <div id="modal"> <div class="modal-content"> <span class="close" onclick="toggleCart()">✕</span> <h2>Carrito</h2> <div id="cartItems"></div> <h3 id="total"></h3> <button onclick="checkout()">Comprar por WhatsApp</button> </div> </div> <footer>Somos CiroSport. Todo lo que necesitas para una vida Fitness</footer> <a href="https://wa.me/50672028728" class="whatsapp-float" target="_blank">💬</a> <script> const colors=["Amarillo","Negro","Rojo","Azul","Gris","Blanco"]; const sizes=["S","M","L","XL"]; const tennisSizes=[36,37,38,39,40,41,42,43,44,45]; const tennisBrands=["Nike","Reebok","Adidas","Cloud Monster","New Balance","Otros"]; const products=[ {name:"Camiseta Olímpica",price:8000,type:"ropa",images:[ "https://res.cloudinary.com/dlz6uc574/image/upload/v1771643082/IMG_20260211_210919_uvpjmt.png", "https://res.cloudinary.com/dlz6uc574/image/upload/v1771643079/IMG_20260211_210919_5_gowxms.png", "https://res.cloudinary.com/dlz6uc574/image/upload/v1771643080/IMG_20260211_210919_1_tikcrp.png", "https://res.cloudinary.com/dlz6uc574/image/upload/v1771643076/IMG_20260212_081532_1_ysp5po.png", "https://res.cloudinary.com/dlz6uc574/image/upload/v1771643076/IMG_20260212_081532_3_nidlsp.png", "https://res.cloudinary.com/dlz6uc574/image/upload/v1771645585/IMG_20260120_203107_4_cgpbi0.png" ]}, {name:"Camiseta Deportiva",price:8000,type:"ropa",images:[ "https://res.cloudinary.com/dlz6uc574/image/upload/v1771646007/Photoroom-20250301_223811_mpctyd.png", "https://res.cloudinary.com/dlz6uc574/image/upload/v1771645955/Photoroom-20250301_223509_f8pykj.png", "https://res.cloudinary.com/dlz6uc574/image/upload/v1771646038/IMG_20250404_210953_2_w6y9tr.png", "https://res.cloudinary.com/dlz6uc574/image/upload/v1771645970/Photoroom-20250301_223643_i8npdv.png", "https://res.cloudinary.com/dlz6uc574/image/upload/v1771645981/Photoroom-20250301_223716_fgxqr2.png" ]}, {name:"Camiseta Oversize",price:12000,type:"ropa",images:[ "https://res.cloudinary.com/dlz6uc574/image/upload/v1771645776/Screenshot_20260103_144217_com_instagram_android_InstagramMainActivity_5_xsc59h.png", "https://res.cloudinary.com/dlz6uc574/image/upload/v1771645355/6362f18afa2e9fef922b0c43ea94f871_trka37.png", "https://res.cloudinary.com/dlz6uc574/image/upload/v1771645514/Screenshot_20260103_144217_com_instagram_android_InstagramMainActivity_3_gnnl1q.png", "https://res.cloudinary.com/dlz6uc574/image/upload/v1771645795/Screenshot_20260103_144217_com_instagram_android_InstagramMainActivity_6_1_ivwbkj.png", "https://res.cloudinary.com/dlz6uc574/image/upload/v1771645776/Screenshot_20260103_144217_com_instagram_android_InstagramMainActivity_6_q6eobs.png", "https://res.cloudinary.com/dlz6uc574/image/upload/v1771645779/Screenshot_20260103_144217_com_instagram_android_InstagramMainActivity_4_cvp1ov.png", "https://res.cloudinary.com/dlz6uc574/image/upload/v1771645794/Screenshot_20260103_144217_com_instagram_android_InstagramMainActivity_6_3_ybowg4.png" ]}, {name:"Tenis Deportivas",price:25000,type:"tenis",images:[ "https://res.cloudinary.com/dlz6uc574/image/upload/v1771648158/IMG-20260212-WA0211_nwlbyj.jpg", "https://res.cloudinary.com/dlz6uc574/image/upload/v1771648154/IMG-20260212-WA0214_huokan.jpg", "https://res.cloudinary.com/dlz6uc574/image/upload/v1771648138/Screenshot_20260212_142115_com_whatsapp_StatusPlaybackActivity_nupuhq.jpg", "https://res.cloudinary.com/dlz6uc574/image/upload/v1771648133/Screenshot_20260212_142137_com_whatsapp_StatusPlaybackActivity_fggfal.jpg", "https://res.cloudinary.com/dlz6uc574/image/upload/v1771648138/IMG-20260212-WA0209_ihassa.jpg", "https://res.cloudinary.com/dlz6uc574/image/upload/v1771648127/Screenshot_20260205_142559_com_whatsapp_StatusPlaybackActivity_lgkrnz.jpg", "https://res.cloudinary.com/dlz6uc574/image/upload/v1771648131/Screenshot_20260205_142607_com_whatsapp_StatusPlaybackActivity_y0r8ja.jpg", "https://res.cloudinary.com/dlz6uc574/image/upload/v1771648117/Screenshot_20260205_142603_com_whatsapp_StatusPlaybackActivity_ozk60q.jpg" ]}, {name:"Proteína",price:50000,type:"prote",images:[ "https://res.cloudinary.com/dlz6uc574/image/upload/v1771646164/IMG-20250826-WA0008_ezryvm.png", "https://res.cloudinary.com/dlz6uc574/image/upload/v1771646285/IMG-20250620-WA0021_fy6e0u.png", "https://res.cloudinary.com/dlz6uc574/image/upload/v1771646251/IMG-20250620-WA0018_iinpf8.png", "https://res.cloudinary.com/dlz6uc574/image/upload/v1771646205/IMG-20250826-WA0230_molicz.png" ]}, {name:"Creatina",price:17500,type:"crea",images:[ "https://res.cloudinary.com/dlz6uc574/image/upload/v1771645882/IMG_20250531_150610_a8hlye.png", "https://res.cloudinary.com/dlz6uc574/image/upload/v1771645871/IMG_20250530_124703_acwhpd.png", "https://res.cloudinary.com/dlz6uc574/image/upload/v1771646321/IMG_20250604_154551_leznbs.png", "https://res.cloudinary.com/dlz6uc574/image/upload/v1771646188/1754318027391_xckwfg.png" ]}, {name:"Conjuntos Deportivos",price:20000,type:"conj",images:[ "https://res.cloudinary.com/dlz6uc574/image/upload/v1771646079/Photoroom-20250224_235848_pillqf.png", "https://res.cloudinary.com/dlz6uc574/image/upload/v1771646193/Photoroom-20250224_233715_elc9du.png", "https://res.cloudinary.com/dlz6uc574/image/upload/v1771646017/Photoroom-20250225_000142_luy730.png", "https://res.cloudinary.com/dlz6uc574/image/upload/v1771646019/Photoroom-20250224_235953_lzcedw.png", "https://res.cloudinary.com/dlz6uc574/image/upload/v1771646052/Photoroom-20250225_000044_rakgft.png", "https://res.cloudinary.com/dlz6uc574/image/upload/v1771646092/Photoroom-20250224_235917_llo27n.png", "https://res.cloudinary.com/dlz6uc574/image/upload/v1771646178/Photoroom-20250224_233647_nnihan.png", "https://res.cloudinary.com/dlz6uc574/image/upload/v1771646167/Photoroom-20250224_233613_ryjvcd.png" ]}, ]; let container=document.getElementById("productos"); let cart=[]; products.forEach((p,i)=>{ let extra=''; if(p.type==='ropa'||p.type==='conj'){ extra+=`<div>Colores: ${colors.map(c=>`<span class="color-btn" data-index="${i}" data-color="${c}" onclick="selectColor(this,${i})">${c}</span>`).join('')}</div>`; extra+=`<div>Tallas: ${sizes.map(s=>`<span class="size-btn" data-index="${i}" data-size="${s}" onclick="selectSize(this,${i})">${s}</span>`).join('')}</div>`; } if(p.type==='tenis'){ extra+=`<div>Marcas: <select id='brand${i}'>${tennisBrands.map(b=>`<option>${b}</option>`).join('')}</select></div>`; extra+=`<div>Tallas: <select id='tallaTenis${i}'>${tennisSizes.map(t=>`<option>${t}</option>`).join('')}</select></div>`; } extra+=`<div class="cant-container"><button onclick="decQty(${i})">-</button><input type="number" id="qty${i}" value="1" min="1"><button onclick="incQty(${i})">+</button></div>`; container.innerHTML+=`<div class="product"><h2>${p.name}</h2><div class="carousel"><div class="carousel-track" id="track${i}">${p.images.map(img=>`<img src="${img}">`).join('')}</div><div class="carousel-controls"><span onclick="prevSlide(${i})">❮</span><span onclick="nextSlide(${i})">❯</span></div></div>${extra}<div class="price">₡${p.price.toLocaleString()}</div><button onclick="addToCart(${i})">Agregar al carrito</button></div>`; }); let index=Array(products.length).fill(0); function updateSlide(i){document.getElementById("track"+i).style.transform=`translateX(-${index[i]*100}%)`;} function nextSlide(i){index[i]=(index[i]+1)%products[i].images.length;updateSlide(i);} function prevSlide(i){index[i]=(index[i]-1+products[i].images.length)%products[i].images.length;updateSlide(i);} function incQty(i){let el=document.getElementById("qty"+i);el.value=parseInt(el.value)+1;} function decQty(i){let el=document.getElementById("qty"+i);if(el.value>1)el.value=parseInt(el.value)-1;} let selectedColors={};let selectedSizes={}; function selectColor(el,i){document.querySelectorAll(`.color-btn[data-index='${i}']`).forEach(e=>e.classList.remove('selected'));el.classList.add('selected');selectedColors[i]=el.dataset.color;} function selectSize(el,i){document.querySelectorAll(`.size-btn[data-index='${i}']`).forEach(e=>e.classList.remove('selected'));el.classList.add('selected');selectedSizes[i]=el.dataset.size;} function addToCart(i){ let p=products[i]; let color=(p.type==='ropa'||p.type==='conj')?selectedColors[i]||colors[0]:''; let size=(p.type==='ropa'||p.type==='conj')?selectedSizes[i]||sizes[0]:p.type==='tenis'?document.getElementById('tallaTenis'+i).value:''; let brand=p.type==='tenis'?document.getElementById('brand'+i).value:''; let qty=parseInt(document.getElementById('qty'+i).value); let name=p.name+(color?` - ${color}`:'')+(size?` - ${size}`:'')+(brand?` - ${brand}`:''); cart.push({name:name,price:p.price,qty:qty}); updateCartCount(); alert("Agregado: "+name); } function updateCartCount(){let c=document.getElementById("cartCount");let total=cart.reduce((a,b)=>a+b.qty,0);c.innerText=total;c.style.display=total>0?"block":"none";} function toggleCart(){let m=document.getElementById("modal");m.style.display=(m.style.display==="flex")?"none":"flex";renderCart();} function renderCart(){ let items=document.getElementById("cartItems");let totalEl=document.getElementById("total"); items.innerHTML="";let total=0; cart.forEach((p,i)=>{items.innerHTML+=`${i+1}. ${p.name} x${p.qty} - ₡${(p.price*p.qty).toLocaleString()} <button style="background:#ff4444;color:#fff;border:none;border-radius:6px;padding:2px 6px;cursor:pointer;font-size:14px;" onclick="removeFromCart(${i})">🗑</button><br>`;total+=p.price*p.qty;}); totalEl.innerText="Total: ₡"+total.toLocaleString(); } function removeFromCart(i){cart.splice(i,1);updateCartCount();renderCart();} function checkout(){ if(cart.length===0){alert("Carrito vacío");return;} let msg="Hola! Quiero comprar:%0A";let total=0; cart.forEach((p,i)=>{msg+=(i+1)+". "+p.name+" x"+p.qty+" - ₡"+p.price*p.qty+"%0A";total+=p.price*p.qty;}); msg+="%0ATotal: ₡"+total+"%0APago por SINPE al 7008-2741"; window.open("https://wa.me/50672028728?text="+msg,"_blank"); } function toggleMenu(){let m=document.getElementById("menu");let o=document.getElementById("overlay");if(m.style.left==="0px"){m.style.left="-100%";o.style.display="none";}else{m.style.left="0px";o.style.display="block";}} function goInicio(){toggleMenu();window.scrollTo({top:0,behavior:"smooth"});} function goPromos(){toggleMenu();document.getElementById("promos").scrollIntoView({behavior:"smooth"});} function goGaleria(){toggleMenu();document.getElementById("galeria").scrollIntoView({behavior:"smooth"});} function goProductos(){toggleMenu();document.getElementById("productos").scrollIntoView({behavior:"smooth"});} </script> </body> </html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Escazú Seguro</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<script>
+const SUPABASE_URL = 'https://jhdhxedbjrtymczgtwrb.supabase.co';
+const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpoZGh4ZWRianJ0eW1jemd0d3JiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzE5ODgzOTYsImV4cCI6MjA4NzU2NDM5Nn0.6VrF8GLZLyvgwfsUdrsBKMT2jHXareFE2oq7whde85k';
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<style>
+:root {
+--bg:#0a0e14;--bg2:#111720;--bg3:#1a2233;--card:#141c28;
+--border:#1e2d45;--accent:#00e5a0;--accent2:#ff5252;
+--accent3:#ffa726;--accent4:#448aff;
+--text:#e8edf5;--text2:#8a99b3;--text3:#4a5a75;
+--glow:rgba(0,229,160,0.15);
+--nav-h:60px;--bottom-h:68px;--radius:16px;--radius-sm:10px;
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;max-width:430px;margin:0 auto;overflow-x:hidden;position:relative;}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;background:radial-gradient(ellipse 60% 40% at 80% 10%,rgba(0,229,160,.05) 0%,transparent 60%),radial-gradient(ellipse 50% 30% at 20% 80%,rgba(68,138,255,.04) 0%,transparent 60%);}
+.screen{display:none;flex-direction:column;min-height:100vh;position:relative;z-index:1;}
+.screen.active{display:flex;}
+.top-nav{position:sticky;top:0;height:var(--nav-h);background:rgba(10,14,20,.95);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;padding:0 18px;z-index:100;flex-shrink:0;}
+.nav-logo{display:flex;align-items:center;gap:10px;cursor:pointer;}
+.nav-logo-icon{width:34px;height:34px;background:linear-gradient(135deg,var(--accent),#00b37a);border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:17px;box-shadow:0 0 14px var(--glow);}
+.nav-logo-text{font-family:'Syne',sans-serif;font-size:15px;font-weight:800;}
+.nav-logo-text span{color:var(--accent);}
+.nav-badge{background:var(--accent2);color:#fff;font-size:10px;font-weight:700;padding:3px 8px;border-radius:20px;font-family:'Syne',sans-serif;animation:pulse-b 2s infinite;}
+@keyframes pulse-b{0%,100%{opacity:1}50%{opacity:.7}}
+.bottom-nav{position:sticky;bottom:0;height:var(--bottom-h);background:rgba(10,14,20,.97);backdrop-filter:blur(24px);border-top:1px solid var(--border);display:flex;align-items:center;z-index:100;flex-shrink:0;}
+.nav-items{display:flex;width:100%;padding:0 6px;}
+.nav-item{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;padding:10px 4px;color:var(--text3);font-size:10px;font-weight:500;cursor:pointer;transition:color .2s;position:relative;border:none;background:none;}
+.nav-item.active{color:var(--accent);}
+.nav-item.active::after{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:22px;height:2px;background:var(--accent);border-radius:2px;}
+.nav-icon{font-size:21px;transition:transform .2s;}
+.nav-item.active .nav-icon{transform:translateY(-1px);}
+.nav-item.rep-btn{flex:none;width:58px;}
+.rep-circle{width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,var(--accent),#00b37a);display:flex;align-items:center;justify-content:center;font-size:24px;box-shadow:0 4px 18px var(--glow);transition:transform .2s;}
+.nav-item.rep-btn:active .rep-circle{transform:scale(.92);}
+.page{flex:1;overflow-y:auto;padding:16px;}
+.page::-webkit-scrollbar{width:3px;}
+.page::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px;}
+.section-title{font-family:'Syne',sans-serif;font-size:10px;font-weight:700;letter-spacing:1.5px;color:var(--text3);text-transform:uppercase;margin:18px 0 9px;}
+.page-title{font-family:'Syne',sans-serif;font-size:23px;font-weight:800;letter-spacing:-.5px;}
+.page-sub{font-size:13px;color:var(--text2);margin-top:3px;}
+.card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:18px;margin-bottom:11px;}
+.hero{background:linear-gradient(135deg,rgba(0,229,160,.08),rgba(68,138,255,.05));border:1px solid rgba(0,229,160,.15);border-radius:var(--radius);padding:22px 18px;margin-bottom:11px;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;top:-40px;right:-40px;width:140px;height:140px;background:radial-gradient(circle,rgba(0,229,160,.1),transparent 70%);}
+.hero-greeting{font-size:11px;color:var(--accent);font-weight:600;letter-spacing:1px;text-transform:uppercase;font-family:'Syne',sans-serif;margin-bottom:5px;}
+.hero-title{font-family:'Syne',sans-serif;font-size:24px;font-weight:800;line-height:1.2;margin-bottom:12px;letter-spacing:-.5px;}
+.hero-title em{color:var(--accent);font-style:normal;}
+.hero-status{display:flex;align-items:center;gap:9px;}
+.pulse{width:9px;height:9px;border-radius:50%;background:var(--accent);animation:ping 1.5s infinite;}
+@keyframes ping{0%{box-shadow:0 0 0 0 rgba(0,229,160,.4)}70%{box-shadow:0 0 0 9px rgba(0,229,160,0)}100%{box-shadow:0 0 0 0 rgba(0,229,160,0)}}
+.ticker-wrap{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-sm);padding:11px 15px;display:flex;align-items:center;gap:9px;overflow:hidden;margin-bottom:11px;}
+.ticker-badge{background:var(--accent2);color:#fff;font-size:9px;font-weight:800;padding:2px 6px;border-radius:4px;font-family:'Syne',sans-serif;flex-shrink:0;}
+.ticker-scroll{font-size:11px;color:var(--text2);white-space:nowrap;animation:ticker 22s linear infinite;}
+@keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.quick-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:11px;}
+.quick-btn{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-sm);padding:13px 6px;display:flex;flex-direction:column;align-items:center;gap:5px;cursor:pointer;color:var(--text2);transition:border-color .2s,background .2s;font-size:9px;font-weight:500;text-align:center;}
+.quick-btn:active{background:var(--bg3);border-color:var(--accent);}
+.quick-icon{font-size:23px;}
+.score-ring-wrap{display:flex;align-items:center;justify-content:center;margin:14px 0;}
+.score-ring{position:relative;width:120px;height:120px;}
+.score-ring svg{transform:rotate(-90deg);}
+.score-ring-val{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;}
+.score-num{font-family:'Syne',sans-serif;font-size:34px;font-weight:800;color:var(--accent);line-height:1;}
+.score-unit{font-size:11px;color:var(--text2);}
+.stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:11px;}
+.stat-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:16px 14px;}
+.stat-val{font-family:'Syne',sans-serif;font-size:30px;font-weight:800;line-height:1;margin-bottom:3px;}
+.stat-label{font-size:11px;color:var(--text2);}
+.pill{display:inline-flex;align-items:center;gap:5px;font-size:10px;font-weight:500;padding:3px 9px;border-radius:20px;}
+.pill::before{content:'';width:5px;height:5px;border-radius:50%;background:currentColor;}
+.pill-green{background:rgba(0,229,160,.12);color:var(--accent);}
+.pill-red{background:rgba(255,82,82,.12);color:var(--accent2);}
+.pill-yellow{background:rgba(255,167,38,.12);color:var(--accent3);}
+.pill-blue{background:rgba(68,138,255,.12);color:var(--accent4);}
+.priority{font-size:10px;font-weight:700;padding:2px 6px;border-radius:4px;font-family:'Syne',sans-serif;text-transform:uppercase;letter-spacing:.5px;}
+.p-high{background:rgba(255,82,82,.15);color:var(--accent2);}
+.p-med{background:rgba(255,167,38,.15);color:var(--accent3);}
+.p-low{background:rgba(68,138,255,.15);color:var(--accent4);}
+.alert-item{display:flex;align-items:flex-start;gap:11px;padding:14px;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);margin-bottom:9px;cursor:pointer;transition:border-color .2s;}
+.alert-item:active{border-color:var(--accent);}
+.alert-icon{width:42px;height:42px;flex-shrink:0;border-radius:11px;display:flex;align-items:center;justify-content:center;font-size:19px;}
+.ai-sec{background:rgba(255,82,82,.12);}
+.ai-inf{background:rgba(255,167,38,.12);}
+.ai-env{background:rgba(0,229,160,.12);}
+.ai-tra{background:rgba(68,138,255,.12);}
+.alert-body{flex:1;min-width:0;}
+.alert-title{font-family:'Syne',sans-serif;font-size:13px;font-weight:600;margin-bottom:3px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.alert-meta{font-size:11px;color:var(--text2);display:flex;gap:8px;align-items:center;flex-wrap:wrap;}
+.alert-desc{font-size:11px;color:var(--text2);margin-top:3px;line-height:1.4;}
+.alert-votes{display:flex;flex-direction:column;align-items:center;gap:1px;flex-shrink:0;}
+.vote-btn{background:none;border:none;cursor:pointer;color:var(--text3);font-size:15px;padding:3px;transition:color .2s,transform .15s;}
+.vote-btn:active{transform:scale(1.4);}
+.vote-btn.voted{color:var(--accent);}
+.vote-count{font-size:12px;font-weight:600;font-family:'Syne',sans-serif;}
+.filter-row{display:flex;gap:7px;overflow-x:auto;padding-bottom:3px;margin-bottom:14px;scrollbar-width:none;}
+.filter-row::-webkit-scrollbar{display:none;}
+.filter-tab{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:7px 14px;color:var(--text2);font-size:11px;font-weight:600;cursor:pointer;white-space:nowrap;font-family:'Syne',sans-serif;transition:all .2s;flex-shrink:0;}
+.filter-tab.on{background:var(--accent);color:#001a0f;border-color:var(--accent);}
+.input-group{margin-bottom:13px;}
+.input-label{font-size:10px;font-weight:600;color:var(--text2);letter-spacing:.8px;text-transform:uppercase;display:block;margin-bottom:5px;font-family:'Syne',sans-serif;}
+.input,select.input,textarea.input{width:100%;background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius-sm);padding:12px 15px;color:var(--text);font-family:'DM Sans',sans-serif;font-size:14px;outline:none;transition:border-color .2s,box-shadow .2s;-webkit-appearance:none;}
+.input:focus,select.input:focus,textarea.input:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(0,229,160,.1);}
+textarea.input{resize:none;min-height:85px;}
+select.input{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%238a99b3' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:38px;cursor:pointer;}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:13px 22px;border:none;border-radius:var(--radius-sm);font-family:'Syne',sans-serif;font-size:14px;font-weight:700;cursor:pointer;transition:all .2s;width:100%;letter-spacing:.2px;}
+.btn-primary{background:linear-gradient(135deg,var(--accent),#00b37a);color:#001a0f;box-shadow:0 4px 18px var(--glow);}
+.btn-primary:active{transform:scale(.97);}
+.btn-ghost{background:var(--bg3);color:var(--text);border:1px solid var(--border);}
+.btn-2col{display:grid;grid-template-columns:1fr 1fr;gap:9px;}
+.cat-grid{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-bottom:13px;}
+.cat-btn{background:var(--bg3);border:2px solid var(--border);border-radius:var(--radius-sm);padding:13px 10px;display:flex;align-items:center;gap:9px;cursor:pointer;color:var(--text);transition:all .2s;font-size:13px;font-family:'DM Sans',sans-serif;font-weight:500;}
+.cat-btn.sel{border-color:var(--accent);background:rgba(0,229,160,.06);color:var(--accent);}
+.cat-icon{font-size:21px;}
+.prio-row{display:flex;gap:7px;margin-bottom:13px;}
+.prio-btn{flex:1;padding:9px 4px;border-radius:var(--radius-sm);border:2px solid var(--border);background:var(--bg3);color:var(--text2);cursor:pointer;text-align:center;font-size:11px;font-weight:700;font-family:'Syne',sans-serif;letter-spacing:.5px;transition:all .2s;}
+.prio-btn.ph{border-color:var(--accent2);background:rgba(255,82,82,.08);color:var(--accent2);}
+.prio-btn.pm{border-color:var(--accent3);background:rgba(255,167,38,.08);color:var(--accent3);}
+.prio-btn.pl{border-color:var(--accent4);background:rgba(68,138,255,.08);color:var(--accent4);}
+.steps{display:flex;align-items:center;gap:5px;margin-bottom:18px;}
+.step{width:27px;height:27px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;font-family:'Syne',sans-serif;border:2px solid var(--border);color:var(--text3);transition:all .3s;}
+.step.act{border-color:var(--accent);background:var(--accent);color:#001a0f;}
+.step.done{border-color:var(--accent);color:var(--accent);}
+.step-line{flex:1;height:2px;background:var(--border);border-radius:1px;transition:background .3s;}
+.step-line.done{background:var(--accent);}
+.loc-btn{width:100%;padding:13px;background:var(--bg3);border:1px dashed var(--border);border-radius:var(--radius-sm);color:var(--text2);cursor:pointer;display:flex;align-items:center;gap:10px;font-size:13px;transition:border-color .2s;margin-bottom:9px;font-family:'DM Sans',sans-serif;}
+.loc-btn.located{border-color:var(--accent);color:var(--accent);background:rgba(0,229,160,.04);}
+.form-s{display:none;}
+.form-s.act{display:block;animation:fi .3s ease;}
+.upload-zone{border:2px dashed var(--border);border-radius:var(--radius-sm);padding:22px;text-align:center;cursor:pointer;transition:border-color .2s;margin-bottom:13px;}
+.upload-zone:active{border-color:var(--accent);}
+.success-view{display:none;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px 20px;flex:1;}
+.success-view.show{display:flex;}
+.success-icon{width:85px;height:85px;background:linear-gradient(135deg,var(--accent),#00b37a);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:38px;margin-bottom:22px;box-shadow:0 0 40px var(--glow);animation:pop .5s cubic-bezier(.34,1.56,.64,1);}
+@keyframes pop{from{transform:scale(0)}to{transform:scale(1)}}
+.ticket-no{font-family:'Syne',sans-serif;font-size:12px;color:var(--accent);letter-spacing:2px;background:rgba(0,229,160,.08);padding:7px 18px;border-radius:20px;margin-bottom:28px;border:1px solid rgba(0,229,160,.15);}
+.sheet-overlay{position:fixed;inset:0;background:rgba(0,0,0,.7);backdrop-filter:blur(8px);z-index:200;display:flex;align-items:flex-end;opacity:0;pointer-events:none;transition:opacity .3s;}
+.sheet-overlay.open{opacity:1;pointer-events:all;}
+.sheet{background:var(--card);border:1px solid var(--border);border-radius:18px 18px 0 0;padding:22px;width:100%;transform:translateY(100%);transition:transform .4s cubic-bezier(.34,1.1,.64,1);max-height:80vh;overflow-y:auto;}
+.sheet-overlay.open .sheet{transform:translateY(0);}
+.sheet-handle{width:34px;height:4px;background:var(--border);border-radius:2px;margin:0 auto 18px;}
+.toast{position:fixed;top:calc(var(--nav-h) + 10px);left:50%;transform:translateX(-50%) translateY(-90px);background:var(--accent);color:#001a0f;font-family:'Syne',sans-serif;font-size:13px;font-weight:700;padding:11px 20px;border-radius:50px;box-shadow:0 8px 30px rgba(0,229,160,.3);transition:transform .4s cubic-bezier(.34,1.56,.64,1);z-index:300;white-space:nowrap;pointer-events:none;}
+.toast.show{transform:translateX(-50%) translateY(0);}
+.toast-err{background:var(--accent2);box-shadow:0 8px 30px rgba(255,82,82,.3);}
+.skeleton{background:linear-gradient(90deg,var(--bg3) 25%,var(--border) 50%,var(--bg3) 75%);background-size:200% 100%;animation:shimmer 1.5s infinite;border-radius:8px;}
+@keyframes shimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}
+.sk-item{height:80px;border-radius:var(--radius);margin-bottom:9px;}
+.db-status{font-size:10px;padding:4px 10px;border-radius:20px;font-family:'Syne',sans-serif;font-weight:600;}
+.db-ok{background:rgba(0,229,160,.12);color:var(--accent);}
+.db-err{background:rgba(255,82,82,.12);color:var(--accent2);}
+.config-warn{background:rgba(255,167,38,.08);border:1px solid rgba(255,167,38,.25);border-radius:var(--radius-sm);padding:14px;margin-bottom:14px;font-size:12px;color:var(--accent3);line-height:1.6;display:none;}
+.config-warn.show{display:block;}
+@keyframes fi{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}
+.fade-in{animation:fi .4s ease forwards;}
+.bar-chart{display:flex;flex-direction:column;gap:9px;}
+.bar-row{display:flex;align-items:center;gap:9px;}
+.bar-label{font-size:11px;color:var(--text2);width:88px;flex-shrink:0;}
+.bar-track{flex:1;height:8px;background:var(--bg3);border-radius:4px;overflow:hidden;}
+.bar-fill{height:100%;border-radius:4px;width:0;transition:width 1.2s cubic-bezier(.4,0,.2,1);}
+.bar-num{font-size:12px;font-weight:600;font-family:'Syne',sans-serif;width:24px;text-align:right;}
+.rank-item{display:flex;align-items:center;gap:11px;padding:11px 0;border-bottom:1px solid var(--border);}
+.rank-item:last-child{border-bottom:none;}
+.rank-n{font-family:'Syne',sans-serif;font-size:15px;font-weight:800;width:22px;color:var(--text3);}
+.gold{color:#ffd700}.silver{color:#c0c0c0}.bronze{color:#cd7f32}
+.rank-info{flex:1;}
+.rank-name{font-size:13px;font-weight:600;margin-bottom:2px;}
+.rank-sub{font-size:11px;color:var(--text2);}
+.rank-score{font-family:'Syne',sans-serif;font-size:14px;font-weight:800;color:var(--accent);}
+</style>
+</head>
+<body>
+<!-- HOME -->
+<div class="screen active" id="sc-home">
+  <nav class="top-nav">
+    <div class="nav-logo" onclick="goTo('home')">
+      <div class="nav-logo-icon">🛡️</div>
+      <div class="nav-logo-text">Escazú<span>Seguro</span></div>
+    </div>
+    <span class="nav-badge" id="home-badge">… ALERTAS</span>
+  </nav>
+  <div class="page">
+    <div class="hero fade-in">
+      <div class="hero-greeting">Buenas, vecino 👋</div>
+      <h1 class="hero-title">Cuida tu <em>comunidad</em><br>en tiempo real</h1>
+      <div class="hero-status">
+        <div class="pulse"></div>
+        <span style="font-size:12px;color:var(--text2);" id="home-date">Zona Escazú · Activo</span>
+      </div>
+    </div>
+    <div class="ticker-wrap fade-in">
+      <span class="ticker-badge">EN VIVO</span>
+      <div class="ticker-scroll" id="home-ticker">🔄 Cargando alertas...</div>
+    </div>
+    <p class="section-title">Acciones rápidas</p>
+    <div class="quick-grid fade-in">
+      <div class="quick-btn" onclick="goTo('report')"><span class="quick-icon">🚨</span>Reportar</div>
+      <div class="quick-btn" onclick="goTo('alerts')"><span class="quick-icon">🔔</span>Alertas</div>
+      <div class="quick-btn" onclick="goTo('map')"><span class="quick-icon">🗺️</span>Ver mapa</div>
+      <div class="quick-btn" onclick="goTo('stats')"><span class="quick-icon">📊</span>Estadísticas</div>
+    </div>
+    <p class="section-title">Nivel de seguridad</p>
+    <div class="card fade-in">
+      <div class="score-ring-wrap">
+        <div class="score-ring">
+          <svg width="120" height="120" viewBox="0 0 120 120">
+            <circle cx="60" cy="60" r="50" fill="none" stroke="#1a2233" stroke-width="11"/>
+            <circle cx="60" cy="60" r="50" fill="none" stroke="url(#g1)" stroke-width="11" stroke-dasharray="314.2" stroke-dashoffset="78" stroke-linecap="round" id="score-arc"/>
+            <defs><linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#00e5a0"/><stop offset="100%" stop-color="#00b37a"/></linearGradient></defs>
+          </svg>
+          <div class="score-ring-val">
+            <span class="score-num" id="score-num">—</span>
+            <span class="score-unit">/ 100</span>
+          </div>
+        </div>
+      </div>
+      <div style="display:flex;justify-content:center;gap:10px;flex-wrap:wrap;">
+        <span class="pill pill-green" id="score-status">Cargando...</span>
+        <span class="pill pill-yellow" id="score-active">…</span>
+      </div>
+    </div>
+    <p class="section-title">Alertas recientes</p>
+    <div id="home-alerts-list"><div class="skeleton sk-item"></div><div class="skeleton sk-item"></div><div class="skeleton sk-item"></div></div>
+    <div style="text-align:center;padding:10px;cursor:pointer;" onclick="goTo('alerts')">
+      <span style="color:var(--accent);font-size:13px;font-weight:600;font-family:'Syne',sans-serif;">Ver todas las alertas →</span>
+    </div>
+    <p class="section-title">Resumen del mes</p>
+    <div class="stat-grid fade-in">
+      <div class="stat-card"><div class="stat-val" style="color:var(--accent2)" id="stat-total">—</div><div class="stat-label">Reportes</div></div>
+      <div class="stat-card"><div class="stat-val" style="color:var(--accent)" id="stat-resolved">—</div><div class="stat-label">Resueltos</div></div>
+      <div class="stat-card"><div class="stat-val" style="color:var(--accent3)" id="stat-pending">—</div><div class="stat-label">Pendientes</div></div>
+      <div class="stat-card"><div class="stat-val" style="color:var(--accent4)" id="stat-voters">—</div><div class="stat-label">Vecinos</div></div>
+    </div>
+  </div>
+  <nav class="bottom-nav"><div class="nav-items">
+    <button class="nav-item active" onclick="goTo('home')"><span class="nav-icon">🏠</span><span>Inicio</span></button>
+    <button class="nav-item" onclick="goTo('alerts')"><span class="nav-icon">🔔</span><span>Alertas</span></button>
+    <button class="nav-item rep-btn" onclick="goTo('report')"><div class="rep-circle">＋</div></button>
+    <button class="nav-item" onclick="goTo('map')"><span class="nav-icon">🗺️</span><span>Mapa</span></button>
+    <button class="nav-item" onclick="goTo('stats')"><span class="nav-icon">📊</span><span>Stats</span></button>
+  </div></nav>
+</div>
+
+<!-- ALERTS -->
+<div class="screen" id="sc-alerts">
+  <nav class="top-nav">
+    <div class="nav-logo" onclick="goTo('home')"><div class="nav-logo-icon">🛡️</div><div class="nav-logo-text">Escazú<span>Seguro</span></div></div>
+    <span class="nav-badge" id="alerts-badge">…</span>
+  </nav>
+  <div class="page">
+    <div class="fade-in" style="margin-bottom:14px;">
+      <div class="page-title">Centro de Alertas</div>
+      <div class="page-sub">Reportes verificados en tiempo real</div>
+    </div>
+    <div class="filter-row fade-in">
+      <button class="filter-tab on" onclick="filterAlerts(this,'all')">Todos</button>
+      <button class="filter-tab" onclick="filterAlerts(this,'seguridad')">🚨 Seguridad</button>
+      <button class="filter-tab" onclick="filterAlerts(this,'infraestructura')">🔧 Infra</button>
+      <button class="filter-tab" onclick="filterAlerts(this,'ambiente')">🌳 Ambiente</button>
+      <button class="filter-tab" onclick="filterAlerts(this,'transito')">🚗 Tránsito</button>
+    </div>
+    <div id="alerts-list"><div class="skeleton sk-item"></div><div class="skeleton sk-item"></div><div class="skeleton sk-item"></div><div class="skeleton sk-item"></div></div>
+  </div>
+  <nav class="bottom-nav"><div class="nav-items">
+    <button class="nav-item" onclick="goTo('home')"><span class="nav-icon">🏠</span><span>Inicio</span></button>
+    <button class="nav-item active" onclick="goTo('alerts')"><span class="nav-icon">🔔</span><span>Alertas</span></button>
+    <button class="nav-item rep-btn" onclick="goTo('report')"><div class="rep-circle">＋</div></button>
+    <button class="nav-item" onclick="goTo('map')"><span class="nav-icon">🗺️</span><span>Mapa</span></button>
+    <button class="nav-item" onclick="goTo('stats')"><span class="nav-icon">📊</span><span>Stats</span></button>
+  </div></nav>
+</div>
+
+<!-- MAP -->
+<div class="screen" id="sc-map">
+  <nav class="top-nav">
+    <div class="nav-logo" onclick="goTo('home')"><div class="nav-logo-icon">🛡️</div><div class="nav-logo-text">Escazú<span>Seguro</span></div></div>
+    <span class="nav-badge" id="map-badge">…</span>
+  </nav>
+  <div class="page" style="padding-top:12px;">
+    <div class="fade-in" style="margin-bottom:10px;"><div class="page-title">Mapa de Incidentes</div><div class="page-sub">Visualización geográfica en tiempo real</div></div>
+    <div style="background:linear-gradient(135deg,#0a1520,#0d1e2f);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;position:relative;height:calc(100vh - 280px);min-height:280px;margin-bottom:11px;" class="fade-in">
+      <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(0,229,160,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(0,229,160,.05) 1px,transparent 1px);background-size:30px 30px;"></div>
+      <svg width="100%" height="100%" viewBox="0 0 400 300" id="map-svg">
+        <polygon points="50,40 180,30 200,120 80,130" fill="#00e5a0" fill-opacity=".05" stroke="#00e5a0" stroke-opacity=".3" stroke-width="1"/>
+        <polygon points="180,30 320,45 310,130 200,120" fill="#448aff" fill-opacity=".05" stroke="#448aff" stroke-opacity=".3" stroke-width="1"/>
+        <polygon points="80,130 200,120 190,220 70,215" fill="#ffa726" fill-opacity=".05" stroke="#ffa726" stroke-opacity=".3" stroke-width="1"/>
+        <polygon points="200,120 310,130 300,210 190,220" fill="#ff5252" fill-opacity=".05" stroke="#ff5252" stroke-opacity=".3" stroke-width="1"/>
+        <path d="M20,80 Q100,75 200,90 Q300,105 390,100" stroke="#1e3050" stroke-width="7" fill="none"/>
+        <path d="M100,20 Q115,100 120,200 Q122,250 125,290" stroke="#1e3050" stroke-width="7" fill="none"/>
+        <path d="M250,15 Q265,90 270,200 Q272,250 275,290" stroke="#1e3050" stroke-width="7" fill="none"/>
+        <path d="M20,170 Q100,165 200,175 Q300,185 390,180" stroke="#1e3050" stroke-width="7" fill="none"/>
+        <text x="110" y="76" fill="#007050" font-size="9.5" text-anchor="middle" font-family="Syne" font-weight="700">San Rafael</text>
+        <text x="248" y="76" fill="#224488" font-size="9.5" text-anchor="middle" font-family="Syne" font-weight="700">Guachipelín</text>
+        <text x="110" y="176" fill="#885500" font-size="9.5" text-anchor="middle" font-family="Syne" font-weight="700">Bello Horizonte</text>
+        <text x="248" y="173" fill="#881122" font-size="9.5" text-anchor="middle" font-family="Syne" font-weight="700">Escazú Centro</text>
+        <g id="map-markers"></g>
+      </svg>
+    </div>
+    <div style="display:flex;gap:8px;">
+      <div class="stat-card" style="flex:1;text-align:center;padding:12px 4px;margin-bottom:0;"><div class="stat-val" style="color:var(--accent2);font-size:22px;" id="map-c-sec">—</div><div class="stat-label">Seguridad</div></div>
+      <div class="stat-card" style="flex:1;text-align:center;padding:12px 4px;margin-bottom:0;"><div class="stat-val" style="color:var(--accent3);font-size:22px;" id="map-c-inf">—</div><div class="stat-label">Infra</div></div>
+      <div class="stat-card" style="flex:1;text-align:center;padding:12px 4px;margin-bottom:0;"><div class="stat-val" style="color:var(--accent);font-size:22px;" id="map-c-env">—</div><div class="stat-label">Ambiente</div></div>
+      <div class="stat-card" style="flex:1;text-align:center;padding:12px 4px;margin-bottom:0;"><div class="stat-val" style="color:var(--accent4);font-size:22px;" id="map-c-tra">—</div><div class="stat-label">Tránsito</div></div>
+    </div>
+  </div>
+  <nav class="bottom-nav"><div class="nav-items">
+    <button class="nav-item" onclick="goTo('home')"><span class="nav-icon">🏠</span><span>Inicio</span></button>
+    <button class="nav-item" onclick="goTo('alerts')"><span class="nav-icon">🔔</span><span>Alertas</span></button>
+    <button class="nav-item rep-btn" onclick="goTo('report')"><div class="rep-circle">＋</div></button>
+    <button class="nav-item active" onclick="goTo('map')"><span class="nav-icon">🗺️</span><span>Mapa</span></button>
+    <button class="nav-item" onclick="goTo('stats')"><span class="nav-icon">📊</span><span>Stats</span></button>
+  </div></nav>
+</div>
+
+<!-- REPORT -->
+<div class="screen" id="sc-report">
+  <nav class="top-nav">
+    <div class="nav-logo" onclick="goTo('home')"><div class="nav-logo-icon">🛡️</div><div class="nav-logo-text">Escazú<span>Seguro</span></div></div>
+    <span onclick="goTo('home')" style="font-size:20px;cursor:pointer;color:var(--text2);">✕</span>
+  </nav>
+  <div class="page" id="rep-page">
+    <div class="fade-in" style="margin-bottom:18px;">
+      <div class="page-title">Reportar Incidente</div>
+      <div class="page-sub">Tu reporte llega a la base de datos en tiempo real</div>
+    </div>
+    <div class="steps fade-in">
+      <div class="step act" id="rs1">1</div><div class="step-line" id="rl1"></div>
+      <div class="step" id="rs2">2</div><div class="step-line" id="rl2"></div>
+      <div class="step" id="rs3">3</div>
+    </div>
+    <div class="form-s act" id="rep-s1">
+      <p class="section-title">Tipo de incidente</p>
+      <div class="cat-grid">
+        <button class="cat-btn" onclick="selCat(this,'🚨','seguridad')"><span class="cat-icon">🚨</span>Seguridad</button>
+        <button class="cat-btn" onclick="selCat(this,'🔧','infraestructura')"><span class="cat-icon">🔧</span>Infraestructura</button>
+        <button class="cat-btn" onclick="selCat(this,'🌳','ambiente')"><span class="cat-icon">🌳</span>Ambiente</button>
+        <button class="cat-btn" onclick="selCat(this,'🚗','transito')"><span class="cat-icon">🚗</span>Tránsito</button>
+        <button class="cat-btn" onclick="selCat(this,'💧','agua')"><span class="cat-icon">💧</span>Agua</button>
+        <button class="cat-btn" onclick="selCat(this,'⚡','electricidad')"><span class="cat-icon">⚡</span>Electricidad</button>
+        <button class="cat-btn" onclick="selCat(this,'🏥','salud')"><span class="cat-icon">🏥</span>Salud</button>
+        <button class="cat-btn" onclick="selCat(this,'📢','otro')"><span class="cat-icon">📢</span>Otro</button>
+      </div>
+      <p class="section-title">Prioridad</p>
+      <div class="prio-row">
+        <button class="prio-btn" id="pb-h" onclick="selPrio('alta')">🔴 ALTA</button>
+        <button class="prio-btn pm" id="pb-m" onclick="selPrio('media')">🟡 MEDIA</button>
+        <button class="prio-btn" id="pb-l" onclick="selPrio('baja')">🔵 BAJA</button>
+      </div>
+      <button class="btn btn-primary" onclick="repStep(2)">Siguiente →</button>
+    </div>
+    <div class="form-s" id="rep-s2">
+      <div class="input-group"><label class="input-label">Título del reporte</label><input class="input" type="text" id="rep-title" placeholder="Ej: Bache peligroso en Calle Vieja"></div>
+      <div class="input-group"><label class="input-label">Descripción detallada</label><textarea class="input" id="rep-desc" placeholder="Describe lo que ves con el mayor detalle posible..."></textarea></div>
+      <div class="input-group"><label class="input-label">Distrito</label>
+        <select class="input" id="rep-dist">
+          <option value="">Seleccionar...</option>
+          <option>Escazú Centro</option><option>San Rafael</option><option>San Antonio</option>
+          <option>Guachipelín</option><option>Bello Horizonte</option><option>Trejos Montealegre</option>
+          <option>Santa María</option><option>Otro</option>
+        </select>
+      </div>
+      <div class="input-group"><label class="input-label">Dirección / referencia</label><input class="input" type="text" id="rep-addr" placeholder="Ej: 200m norte del CIMA"></div>
+      <button class="loc-btn" id="loc-btn" onclick="getLocation()"><span style="font-size:19px">📍</span><span>Usar mi ubicación actual</span></button>
+      <div class="btn-2col"><button class="btn btn-ghost" onclick="repStep(1)">← Atrás</button><button class="btn btn-primary" onclick="repStep(3)">Siguiente →</button></div>
+    </div>
+    <div class="form-s" id="rep-s3">
+      <div class="upload-zone" onclick="fakeUpload()">
+        <div id="up-icon" style="font-size:30px;margin-bottom:7px;">📷</div>
+        <div id="up-text" style="font-size:13px;color:var(--text2);">Subir foto del incidente</div>
+        <div style="font-size:11px;color:var(--text3);margin-top:3px;">JPG, PNG, MP4 · Máx 20MB</div>
+      </div>
+      <div class="input-group"><label class="input-label">Tu nombre (opcional)</label><input class="input" type="text" id="rep-name" placeholder="Anónimo"></div>
+      <div class="input-group"><label class="input-label">Cédula <span style="color:var(--accent2)">*</span></label><input class="input" type="text" id="rep-cedula" placeholder="Ej: 1-1234-5678" required></div>
+      <div class="input-group"><label class="input-label">Teléfono <span style="color:var(--accent2)">*</span></label><input class="input" type="tel" id="rep-phone" placeholder="+506 8888-8888" required></div>
+      <div class="card" style="background:rgba(0,229,160,.04);border-color:rgba(0,229,160,.15);margin-bottom:13px;">
+        <p style="font-family:'Syne',sans-serif;font-size:10px;color:var(--accent);letter-spacing:1px;text-transform:uppercase;margin-bottom:9px;">Resumen del reporte</p>
+        <div id="sum-cat" style="font-size:13px;margin-bottom:5px;"></div>
+        <div id="sum-title" style="font-size:12px;color:var(--text2);margin-bottom:3px;"></div>
+        <div id="sum-loc" style="font-size:12px;color:var(--text2);"></div>
+      </div>
+      <div class="btn-2col" style="margin-bottom:8px;">
+        <button class="btn btn-ghost" onclick="repStep(2)">← Atrás</button>
+        <button class="btn btn-primary" id="submit-btn" onclick="submitReport()">🚀 Enviar</button>
+      </div>
+      <p style="font-size:10px;color:var(--text3);text-align:center;line-height:1.5;">Al enviar confirmás que la información es verídica.</p>
+    </div>
+  </div>
+  <div class="success-view" id="rep-success">
+    <div class="success-icon">✅</div>
+    <h2 style="font-family:'Syne',sans-serif;font-size:24px;font-weight:800;margin-bottom:9px;">¡Reporte enviado!</h2>
+    <p style="font-size:13px;color:var(--text2);line-height:1.6;margin-bottom:22px;max-width:280px;">Tu reporte fue guardado en la base de datos y ya es visible para toda la comunidad.</p>
+    <div class="ticket-no">TICKET #ESC-<span id="ticket-num">00000</span></div>
+    <button class="btn btn-primary" style="max-width:220px;" onclick="goTo('alerts')">Ver alertas activas</button>
+    <div style="margin-top:14px;color:var(--text2);font-size:13px;cursor:pointer;" onclick="goTo('home')">Volver al inicio</div>
+  </div>
+  <nav class="bottom-nav"><div class="nav-items">
+    <button class="nav-item" onclick="goTo('home')"><span class="nav-icon">🏠</span><span>Inicio</span></button>
+    <button class="nav-item" onclick="goTo('alerts')"><span class="nav-icon">🔔</span><span>Alertas</span></button>
+    <button class="nav-item rep-btn active" onclick="goTo('report')"><div class="rep-circle">＋</div></button>
+    <button class="nav-item" onclick="goTo('map')"><span class="nav-icon">🗺️</span><span>Mapa</span></button>
+    <button class="nav-item" onclick="goTo('stats')"><span class="nav-icon">📊</span><span>Stats</span></button>
+  </div></nav>
+</div>
+
+<!-- STATS -->
+<div class="screen" id="sc-stats">
+  <nav class="top-nav">
+    <div class="nav-logo" onclick="goTo('home')"><div class="nav-logo-icon">🛡️</div><div class="nav-logo-text">Escazú<span>Seguro</span></div></div>
+    <span id="db-status-badge" class="db-status db-ok">● DB conectada</span>
+  </nav>
+  <div class="page">
+    <div class="fade-in" style="margin-bottom:14px;"><div class="page-title">Estadísticas</div><div class="page-sub">Datos reales de la comunidad</div></div>
+    <div class="stat-grid fade-in">
+      <div class="stat-card"><div class="stat-val" style="color:var(--accent2)" id="s-total">—</div><div class="stat-label">Reportes totales</div></div>
+      <div class="stat-card"><div class="stat-val" style="color:var(--accent)" id="s-resolved">—</div><div class="stat-label">Resueltos</div></div>
+      <div class="stat-card"><div class="stat-val" style="color:var(--accent3)" id="s-pending">—</div><div class="stat-label">Pendientes</div></div>
+      <div class="stat-card"><div class="stat-val" style="color:var(--accent4)" id="s-voters">—</div><div class="stat-label">Votos totales</div></div>
+    </div>
+    <p class="section-title">Por tipo de incidente</p>
+    <div class="card fade-in"><div class="bar-chart" id="type-bars"><div style="color:var(--text3);font-size:12px;text-align:center;padding:10px;">Cargando...</div></div></div>
+    <p class="section-title">Por distrito</p>
+    <div class="card fade-in"><div class="bar-chart" id="district-bars"><div style="color:var(--text3);font-size:12px;text-align:center;padding:10px;">Cargando...</div></div></div>
+    <p class="section-title">Top reporteros del mes 🏆</p>
+    <div class="card fade-in" id="top-reporters"><div style="color:var(--text3);font-size:12px;text-align:center;padding:10px;">Cargando...</div></div>
+    <div class="card" style="background:linear-gradient(135deg,rgba(0,229,160,.08),rgba(68,138,255,.05));border-color:rgba(0,229,160,.15);text-align:center;margin-bottom:6px;">
+      <div style="font-size:26px;margin-bottom:7px;">🏅</div>
+      <div style="font-family:'Syne',sans-serif;font-size:15px;font-weight:700;margin-bottom:5px;">¡Sé parte del cambio!</div>
+      <div style="font-size:12px;color:var(--text2);margin-bottom:13px;">Cada reporte suma para hacer Escazú más seguro</div>
+      <button class="btn btn-primary" style="max-width:180px;margin:0 auto;" onclick="goTo('report')">Reportar ahora</button>
+    </div>
+  </div>
+  <nav class="bottom-nav"><div class="nav-items">
+    <button class="nav-item" onclick="goTo('home')"><span class="nav-icon">🏠</span><span>Inicio</span></button>
+    <button class="nav-item" onclick="goTo('alerts')"><span class="nav-icon">🔔</span><span>Alertas</span></button>
+    <button class="nav-item rep-btn" onclick="goTo('report')"><div class="rep-circle">＋</div></button>
+    <button class="nav-item" onclick="goTo('map')"><span class="nav-icon">🗺️</span><span>Mapa</span></button>
+    <button class="nav-item active" onclick="goTo('stats')"><span class="nav-icon">📊</span><span>Stats</span></button>
+  </div></nav>
+</div>
+
+<!-- DETAIL SHEET -->
+<div class="sheet-overlay" id="sheet" onclick="closeSheet(event)">
+  <div class="sheet">
+    <div class="sheet-handle"></div>
+    <div style="display:flex;align-items:flex-start;gap:13px;margin-bottom:14px;">
+      <div class="alert-icon" id="sh-icon" style="width:48px;height:48px;font-size:22px;flex-shrink:0;"></div>
+      <div><div id="sh-title" style="font-family:'Syne',sans-serif;font-size:17px;font-weight:700;line-height:1.25;margin-bottom:6px;"></div>
+      <div style="display:flex;gap:7px;flex-wrap:wrap;"><span id="sh-prio" class="priority"></span><span id="sh-time" class="pill pill-blue" style="font-size:10px;"></span></div></div>
+    </div>
+    <div style="background:var(--bg3);border-radius:9px;padding:11px;margin-bottom:12px;">
+      <div style="font-size:10px;color:var(--text3);margin-bottom:3px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;">📍 Ubicación</div>
+      <div id="sh-loc" style="font-size:13px;"></div>
+    </div>
+    <div id="sh-desc" style="font-size:13px;color:var(--text2);line-height:1.6;margin-bottom:14px;"></div>
+    <img id="sh-photo" style="display:none;width:100%;border-radius:10px;margin-bottom:14px;object-fit:cover;max-height:200px;" />
+    <div style="display:flex;justify-content:space-between;align-items:center;padding:11px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);margin-bottom:14px;">
+      <div><div style="font-size:10px;color:var(--text3);margin-bottom:2px;">Estado</div><div id="sh-status" style="font-size:13px;font-weight:600;color:var(--accent);"></div></div>
+      <div style="text-align:right;"><div style="font-size:10px;color:var(--text3);margin-bottom:2px;">Votos</div><div id="sh-votes" style="font-family:'Syne',sans-serif;font-size:18px;font-weight:800;color:var(--accent);"></div></div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:9px;">
+      <button class="btn btn-primary" id="sh-vote-btn" onclick="voteFromSheet()">👍 Confirmar</button>
+      <button class="btn btn-ghost" onclick="showToast('📤 Enlace copiado')">🔗 Compartir</button>
+    </div>
+    <button class="btn btn-ghost" style="border-color:rgba(255,82,82,.3);color:var(--accent2);" onclick="deleteFromSheet()">🗑️ Eliminar reporte</button>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+let sb = null;
+let dbOk = false;
+let currentFilter = 'all';
+let allReports = [];
+let currentSheetReport = null;
+let userLat = null, userLng = null;
+let selCatData = { icon: '📢', label: 'otro' };
+let selPrioData = 'media';
+
+const catIcon = { seguridad:'🚨', infraestructura:'🔧', ambiente:'🌳', transito:'🚗', agua:'💧', electricidad:'⚡', salud:'🏥', otro:'📢' };
+const catCls = { seguridad:'ai-sec', infraestructura:'ai-inf', ambiente:'ai-env', transito:'ai-tra', agua:'ai-inf', electricidad:'ai-inf', salud:'ai-sec', otro:'ai-tra' };
+const catColor = { seguridad:'#ff5252', infraestructura:'#ffa726', ambiente:'#00e5a0', transito:'#448aff', agua:'#448aff', electricidad:'#ffa726', salud:'#ff5252', otro:'#8b5cf6' };
+const mapCoords = { 'Guachipelín':{x:290,y:65}, 'San Rafael':{x:160,y:55}, 'Escazú Centro':{x:240,y:170}, 'Bello Horizonte':{x:95,y:175}, 'Trejos Montealegre':{x:60,y:100}, 'San Antonio':{x:268,y:158}, 'Santa María':{x:180,y:220}, 'Otro':{x:200,y:130} };
+
+function initSupabase() {
+  try {
+    if (typeof supabase === 'undefined') {
+      console.warn('Supabase library not loaded');
+      dbOk = false;
+      loadDemoData();
+      return;
+    }
+    sb = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+    dbOk = true;
+    console.log('✅ Supabase conectado');
+    loadAllData();
+    sb.channel('reportes-changes')
+      .on('postgres_changes', { event: '*', schema: 'public', table: 'reportes' }, () => { loadAllData(); })
+      .subscribe();
+  } catch(e) {
+    console.error('Error Supabase:', e);
+    dbOk = false;
+    loadDemoData();
+  }
+}
+
+function loadDemoData() {
+  allReports = [
+    { id:1, titulo:'Robo de vehículo en Guachipelín', descripcion:'Toyota Corolla plata. Placa BJK-448.', categoria:'seguridad', prioridad:'alta', distrito:'Guachipelín', direccion:'Frente al Multiplaza', estado:'activo', votos:14, nombre_reportero:'Juan C.', created_at: new Date(Date.now()-23*60000).toISOString() },
+    { id:2, titulo:'Árbol caído en Ruta 27', descripcion:'Bloquea carril derecho. Municipalidad notificada.', categoria:'ambiente', prioridad:'media', distrito:'San Rafael', direccion:'Salida Escazú', estado:'en_proceso', votos:7, nombre_reportero:'Vecinos SR', created_at: new Date(Date.now()-70*60000).toISOString() },
+    { id:3, titulo:'Alumbrado público apagado', descripcion:'3 postes sin luz. Zona oscura.', categoria:'infraestructura', prioridad:'baja', distrito:'Escazú Centro', direccion:'Av. Central frente al CIMA', estado:'activo', votos:5, nombre_reportero:'María L.', created_at: new Date(Date.now()-3*3600000).toISOString() },
+    { id:4, titulo:'Accidente en Bello Horizonte', descripcion:'Colisión menor. Sin heridos.', categoria:'transito', prioridad:'media', distrito:'Bello Horizonte', direccion:'Entrada principal', estado:'resuelto', votos:11, nombre_reportero:'Patrulla #04', created_at: new Date(Date.now()-4*3600000).toISOString() },
+    { id:5, titulo:'Deslizamiento en Trejos Montealegre', descripcion:'Camino vecinal bloqueado.', categoria:'ambiente', prioridad:'alta', distrito:'Trejos Montealegre', direccion:'Camino viejo', estado:'en_proceso', votos:19, nombre_reportero:'CNE Escazú', created_at: new Date(Date.now()-26*3600000).toISOString() },
+    { id:6, titulo:'Bache peligroso Calle Vieja', descripcion:'Hueco profundo. Daños a vehículos.', categoria:'infraestructura', prioridad:'media', distrito:'San Antonio', direccion:'Calle Vieja km 3', estado:'activo', votos:8, nombre_reportero:'Luis M.', created_at: new Date(Date.now()-27*3600000).toISOString() },
+  ];
+  updateUI();
+}
+
+async function loadAllData() {
+  try {
+    const { data, error } = await sb.from('reportes').select('*').order('created_at', { ascending: false }).limit(50);
+    if (error) throw error;
+    allReports = data || [];
+    updateUI();
+    updateDBStatus(true);
+  } catch(e) {
+    console.error('Error cargando datos:', e);
+    updateDBStatus(false);
+    if (allReports.length === 0) loadDemoData();
+  }
+}
+
+function updateDBStatus(ok) {
+  const el = document.getElementById('db-status-badge');
+  if (!el) return;
+  el.textContent = ok ? '● DB conectada' : '● Sin conexión';
+  el.className = 'db-status ' + (ok ? 'db-ok' : 'db-err');
+}
+
+function updateUI() {
+  renderHomeAlerts();
+  renderAlertsList();
+  renderMapMarkers();
+  renderStats();
+  updateHomeStats();
+  updateTicker();
+}
+
+function updateHomeStats() {
+  const total = allReports.length;
+  const resolved = allReports.filter(r=>r.estado==='resuelto').length;
+  const pending = allReports.filter(r=>r.estado!=='resuelto').length;
+  const voters = allReports.reduce((a,r)=>a+(r.votos||0), 0);
+  const active = allReports.filter(r=>r.estado!=='resuelto').length;
+  setEl('stat-total', total); setEl('stat-resolved', resolved);
+  setEl('stat-pending', pending); setEl('stat-voters', voters);
+  setEl('home-badge', active + ' ALERTAS');
+  let score = 100;
+  allReports.filter(r=>r.estado!=='resuelto').forEach(r=>{
+    if(r.prioridad==='alta') score -= 4;
+    else if(r.prioridad==='media') score -= 2;
+    else score -= 1;
+  });
+  score = Math.max(10, Math.min(100, score));
+  setEl('score-num', score);
+  const arc = document.getElementById('score-arc');
+  if(arc) arc.setAttribute('stroke-dashoffset', 314.2 * (1 - score/100));
+  setEl('score-status', score >= 70 ? 'Seguridad Normal' : score >= 40 ? 'Alerta Moderada' : '⚠️ Alerta Alta');
+  setEl('score-active', active + ' incidentes activos');
+}
+
+function updateTicker() {
+  const ticker = document.getElementById('home-ticker');
+  if (!ticker || allReports.length === 0) return;
+  const items = allReports.slice(0,6).map(r=>`${catIcon[r.categoria]||'📢'} ${r.titulo} · ${r.distrito}`).join(' &nbsp;·&nbsp; ');
+  ticker.innerHTML = items + ' &nbsp;·&nbsp; ' + items;
+}
+
+function renderHomeAlerts() {
+  const list = document.getElementById('home-alerts-list');
+  if (!list) return;
+  const recent = allReports.filter(r=>r.estado!=='resuelto').slice(0,3);
+  list.innerHTML = recent.length ? recent.map(r=>alertHTML(r)).join('') : '<div style="color:var(--text3);text-align:center;padding:20px;font-size:13px;">¡Sin alertas activas! 🎉</div>';
+}
+
+function renderAlertsList() {
+  const list = document.getElementById('alerts-list');
+  if (!list) return;
+  const filtered = currentFilter === 'all' ? allReports : allReports.filter(r=>r.categoria===currentFilter);
+  const badge = document.getElementById('alerts-badge');
+  if(badge) badge.textContent = allReports.filter(r=>r.estado!=='resuelto').length + ' ACTIVAS';
+  list.innerHTML = filtered.length ? filtered.map(r=>alertHTML(r)).join('') : '<div style="color:var(--text3);text-align:center;padding:30px;font-size:13px;">Sin reportes en esta categoría</div>';
+}
+
+function alertHTML(r) {
+  const prioCls = { alta:'p-high', media:'p-med', baja:'p-low' };
+  const icon = catIcon[r.categoria] || '📢';
+  const cls = catCls[r.categoria] || 'ai-tra';
+  const prio = prioCls[r.prioridad] || 'p-low';
+  const time = timeAgo(r.created_at);
+  return `<div class="alert-item" onclick='openSheet(${JSON.stringify(r)})'>
+    <div class="alert-icon ${cls}">${icon}</div>
+    <div class="alert-body">
+      <div class="alert-title">${escHtml(r.titulo)}</div>
+      <div class="alert-meta"><span>${escHtml(r.distrito||'')}</span><span>·</span><span>${time}</span><span class="priority ${prio}">${(r.prioridad||'').toUpperCase()}</span></div>
+      <div class="alert-desc">${escHtml((r.descripcion||'').substring(0,80))}${r.descripcion&&r.descripcion.length>80?'...':''}</div>
+    </div>
+    <div class="alert-votes">
+      <button class="vote-btn ${r._voted?'voted':''}" onclick="event.stopPropagation();voteReport(${r.id},this)">▲</button>
+      <span class="vote-count">${r.votos||0}</span>
+    </div>
+  </div>`;
+}
+
+function filterAlerts(btn, cat) {
+  document.querySelectorAll('#sc-alerts .filter-tab').forEach(b=>b.classList.remove('on'));
+  btn.classList.add('on');
+  currentFilter = cat;
+  renderAlertsList();
+}
+
+function renderMapMarkers() {
+  const g = document.getElementById('map-markers');
+  if (!g) return;
+  const active = allReports.filter(r=>r.estado!=='resuelto');
+  setEl('map-c-sec', active.filter(r=>r.categoria==='seguridad').length);
+  setEl('map-c-inf', active.filter(r=>['infraestructura','agua','electricidad'].includes(r.categoria)).length);
+  setEl('map-c-env', active.filter(r=>r.categoria==='ambiente').length);
+  setEl('map-c-tra', active.filter(r=>r.categoria==='transito').length);
+  setEl('map-badge', active.length + ' EN MAPA');
+  g.innerHTML = active.map((r,i) => {
+    const pos = mapCoords[r.distrito] || { x: 150+(i%3)*60, y: 100+Math.floor(i/3)*50 };
+    const color = catColor[r.categoria] || '#8b5cf6';
+    const icon = catIcon[r.categoria] || '📢';
+    return `<g style="cursor:pointer" onclick='openSheet(${JSON.stringify(r)})'>
+      <circle cx="${pos.x}" cy="${pos.y}" r="18" fill="${color}" fill-opacity=".12"/>
+      <circle cx="${pos.x}" cy="${pos.y}" r="10" fill="${color}"/>
+      <text x="${pos.x}" y="${pos.y+4}" text-anchor="middle" font-size="9" fill="white">${icon}</text>
+    </g>`;
+  }).join('');
+}
+
+function renderStats() {
+  const total = allReports.length;
+  const resolved = allReports.filter(r=>r.estado==='resuelto').length;
+  const pending = allReports.filter(r=>r.estado!=='resuelto').length;
+  const votes = allReports.reduce((a,r)=>a+(r.votos||0),0);
+  setEl('s-total',total); setEl('s-resolved',resolved); setEl('s-pending',pending); setEl('s-voters',votes);
+  const types = {};
+  allReports.forEach(r=>{ types[r.categoria]=(types[r.categoria]||0)+1; });
+  const sortedTypes = Object.entries(types).sort((a,b)=>b[1]-a[1]);
+  const maxT = sortedTypes[0]?.[1] || 1;
+  const colors = { seguridad:'#ff5252', infraestructura:'#ffa726', ambiente:'#00e5a0', transito:'#448aff', agua:'#448aff', electricidad:'#8b5cf6', salud:'#ff5252', otro:'#8b8b8b' };
+  const typeBars = document.getElementById('type-bars');
+  if(typeBars) typeBars.innerHTML = sortedTypes.length ? sortedTypes.map(([cat,n])=>`
+    <div class="bar-row">
+      <span class="bar-label">${catIcon[cat]||'📢'} ${cat.charAt(0).toUpperCase()+cat.slice(1)}</span>
+      <div class="bar-track"><div class="bar-fill" style="width:${Math.round(n/maxT*100)}%;background:${colors[cat]||'#8b8b8b'}"></div></div>
+      <span class="bar-num">${n}</span>
+    </div>`).join('') : '<div style="color:var(--text3);font-size:12px;text-align:center;padding:10px;">Sin datos aún</div>';
+  const dists = {};
+  allReports.forEach(r=>{ if(r.distrito) dists[r.distrito]=(dists[r.distrito]||0)+1; });
+  const sortedDists = Object.entries(dists).sort((a,b)=>b[1]-a[1]).slice(0,5);
+  const maxD = sortedDists[0]?.[1] || 1;
+  const distColors = ['#ff5252','#ffa726','#00e5a0','#448aff','#8b5cf6'];
+  const distBars = document.getElementById('district-bars');
+  if(distBars) distBars.innerHTML = sortedDists.length ? sortedDists.map(([d,n],i)=>`
+    <div class="bar-row">
+      <span class="bar-label">${d}</span>
+      <div class="bar-track"><div class="bar-fill" style="width:${Math.round(n/maxD*100)}%;background:${distColors[i]}"></div></div>
+      <span class="bar-num">${n}</span>
+    </div>`).join('') : '<div style="color:var(--text3);font-size:12px;text-align:center;padding:10px;">Sin datos aún</div>';
+  const reporters = {};
+  allReports.forEach(r=>{ if(r.nombre_reportero) reporters[r.nombre_reportero]=(reporters[r.nombre_reportero]||0)+1; });
+  const topR = Object.entries(reporters).sort((a,b)=>b[1]-a[1]).slice(0,4);
+  const medals = ['gold','silver','bronze',''];
+  const topEl = document.getElementById('top-reporters');
+  if(topEl) topEl.innerHTML = topR.length ? topR.map(([name,count],i)=>`
+    <div class="rank-item">
+      <div class="rank-n ${medals[i]}">${i+1}</div>
+      <div class="rank-info"><div class="rank-name">${escHtml(name)}</div><div class="rank-sub">${count} reporte${count!==1?'s':''}</div></div>
+      <div class="rank-score">⭐ ${count*30}</div>
+    </div>`).join('') : '<div style="color:var(--text3);font-size:12px;text-align:center;padding:10px;">Sin reportes aún. ¡Sé el primero!</div>';
+}
+
+function openSheet(r) {
+  if (typeof r === 'string') r = JSON.parse(r);
+  currentSheetReport = r;
+  const prioCls = { alta:'p-high', media:'p-med', baja:'p-low' };
+  const icon = catIcon[r.categoria]||'📢';
+  const el = document.getElementById('sh-icon');
+  el.textContent = icon;
+  el.className = 'alert-icon ' + (catCls[r.categoria]||'ai-tra');
+  document.getElementById('sh-title').textContent = r.titulo;
+  document.getElementById('sh-time').textContent = r.distrito + ' · ' + timeAgo(r.created_at);
+  document.getElementById('sh-loc').textContent = (r.distrito||'') + (r.direccion?', '+r.direccion:'');
+  document.getElementById('sh-desc').textContent = r.descripcion||'';
+  const photoEl = document.getElementById('sh-photo');
+  if (r.foto_url) {
+    photoEl.src = r.foto_url;
+    photoEl.style.display = 'block';
+  } else {
+    photoEl.style.display = 'none';
+  }
+  const p = document.getElementById('sh-prio');
+  p.textContent = (r.prioridad||'').toUpperCase();
+  p.className = 'priority '+(prioCls[r.prioridad]||'p-low');
+  document.getElementById('sh-status').textContent = r.estado==='resuelto'?'✅ Resuelto':r.estado==='en_proceso'?'⚙️ En proceso':'🔴 Activo';
+  document.getElementById('sh-votes').textContent = r.votos||0;
+  document.getElementById('sheet').classList.add('open');
+}
+
+function closeSheet(e) { if(e.target===document.getElementById('sheet')) document.getElementById('sheet').classList.remove('open'); }
+function closeSheetDirect() { document.getElementById('sheet').classList.remove('open'); }
+async function voteFromSheet() { if (!currentSheetReport) return; await voteReportById(currentSheetReport.id); closeSheetDirect(); }
+function deleteFromSheet() { if (!currentSheetReport) return; deleteReport(currentSheetReport.id); }
+
+async function voteReport(id, btn) {
+  const countEl = btn.parentElement.querySelector('.vote-count');
+  if (btn.classList.contains('voted')) return;
+  btn.classList.add('voted');
+  countEl.textContent = parseInt(countEl.textContent) + 1;
+  showToast('✅ Voto registrado');
+  await voteReportById(id);
+}
+
+async function voteReportById(id) {
+  const report = allReports.find(r=>r.id===id);
+  if (!report) return;
+  const newVotes = (report.votos||0) + 1;
+  report.votos = newVotes;
+  report._voted = true;
+  if (dbOk && sb) {
+    try { await sb.from('reportes').update({ votos: newVotes }).eq('id', id); }
+    catch(e) { console.error('Error al votar:', e); }
+  }
+}
+
+async function submitReport() {
+  const title = document.getElementById('rep-title').value.trim();
+  const dist = document.getElementById('rep-dist').value;
+  const cedula = document.getElementById('rep-cedula').value.trim();
+  const phone = document.getElementById('rep-phone').value.trim();
+  if (!title) { showToast('⚠️ Ingresá un título', true); return; }
+  if (!dist) { showToast('⚠️ Seleccioná un distrito', true); return; }
+  if (!cedula) { showToast('⚠️ La cédula es obligatoria', true); return; }
+  if (!phone) { showToast('⚠️ El teléfono es obligatorio', true); return; }
+  const btn = document.getElementById('submit-btn');
+  btn.textContent = '⏳ Enviando...'; btn.disabled = true;
+  const newReport = {
+    titulo: title,
+    descripcion: document.getElementById('rep-desc').value.trim(),
+    categoria: selCatData.label, prioridad: selPrioData, distrito: dist,
+    direccion: document.getElementById('rep-addr').value.trim(),
+    nombre_reportero: document.getElementById('rep-name').value.trim() || 'Anónimo',
+    telefono: document.getElementById('rep-phone').value.trim(),
+    cedula: document.getElementById('rep-cedula').value.trim(),
+    estado: 'activo', votos: 0, lat: userLat, lng: userLng,
+    foto_url: uploadedPhotoUrl || null,
+  };
+  let ticketId;
+  if (dbOk && sb) {
+    try {
+      const { data, error } = await sb.from('reportes').insert([newReport]).select();
+      if (error) throw error;
+      ticketId = data[0]?.id || Math.floor(10000+Math.random()*90000);
+      allReports.unshift({ ...newReport, id: ticketId, created_at: new Date().toISOString() });
+      updateUI();
+    } catch(e) {
+      console.error('Error al guardar:', e);
+      showToast('❌ Error al guardar. Reintentá.', true);
+      btn.textContent = '🚀 Enviar'; btn.disabled = false; return;
+    }
+  } else {
+    ticketId = Math.floor(10000+Math.random()*90000);
+    allReports.unshift({ ...newReport, id: ticketId, created_at: new Date().toISOString() });
+    updateUI();
+    await new Promise(r=>setTimeout(r,800));
+  }
+  document.getElementById('ticket-num').textContent = ticketId;
+  document.getElementById('rep-page').style.display = 'none';
+  document.getElementById('rep-success').classList.add('show');
+  btn.textContent = '🚀 Enviar'; btn.disabled = false;
+  uploadedPhotoUrl = null;
+}
+
+function selCat(btn, icon, label) {
+  document.querySelectorAll('.cat-btn').forEach(b=>b.classList.remove('sel'));
+  btn.classList.add('sel');
+  selCatData = { icon, label };
+}
+
+function selPrio(p) {
+  selPrioData = p;
+  document.querySelectorAll('.prio-btn').forEach(b=>b.className='prio-btn');
+  if(p==='alta') document.getElementById('pb-h').classList.add('ph');
+  else if(p==='media') document.getElementById('pb-m').classList.add('pm');
+  else document.getElementById('pb-l').classList.add('pl');
+}
+
+function repStep(n) {
+  [1,2,3].forEach(i=>{
+    document.getElementById('rep-s'+i).classList.toggle('act', i===n);
+    const s = document.getElementById('rs'+i);
+    s.classList.toggle('act', i===n);
+    s.classList.toggle('done', i<n);
+    if(i<3) document.getElementById('rl'+i).classList.toggle('done', i<n);
+  });
+  if(n===3) updateSummary();
+  document.querySelector('#sc-report .page').scrollTo(0,0);
+}
+
+function updateSummary() {
+  document.getElementById('sum-cat').innerHTML = `<span style="font-size:17px">${selCatData.icon}</span> <strong>${selCatData.label}</strong>`;
+  document.getElementById('sum-title').textContent = '📝 ' + (document.getElementById('rep-title').value||'(sin título)');
+  const d = document.getElementById('rep-dist').value;
+  const a = document.getElementById('rep-addr').value;
+  document.getElementById('sum-loc').textContent = '📍 ' + ([d,a].filter(Boolean).join(', ')||'(sin ubicación)');
+}
+
+function getLocation() {
+  const btn = document.getElementById('loc-btn');
+  btn.innerHTML='<span style="font-size:19px">⏳</span><span>Obteniendo ubicación...</span>';
+  if(navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(pos=>{
+      userLat = pos.coords.latitude; userLng = pos.coords.longitude;
+      btn.innerHTML=`<span style="font-size:19px">✅</span><span>${userLat.toFixed(4)}, ${userLng.toFixed(4)}</span>`;
+      btn.classList.add('located');
+    }, ()=>{ btn.innerHTML='<span style="font-size:19px">📍</span><span>No se pudo obtener ubicación</span>'; });
+  }
+}
+
+let uploadedPhotoUrl = null;
+
+function fakeUpload() {
+  const input = document.createElement('input');
+  input.type = 'file';
+  input.accept = 'image/*';
+  input.onchange = async (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+    document.getElementById('up-icon').textContent='⏳';
+    document.getElementById('up-text').textContent='Subiendo foto...';
+    if (dbOk && sb) {
+      try {
+        const fileName = `reporte_${Date.now()}_${file.name}`;
+        const { data, error } = await sb.storage
+          .from('fotos-reportes')
+          .upload(fileName, file);
+        if (error) throw error;
+        const { data: urlData } = sb.storage.from('fotos-reportes').getPublicUrl(fileName);
+        uploadedPhotoUrl = urlData.publicUrl;
+        document.getElementById('up-icon').textContent='✅';
+        document.getElementById('up-text').textContent=file.name + ' · cargada';
+        showToast('📷 Foto subida exitosamente');
+      } catch(e) {
+        console.error('Error subiendo foto:', e);
+        document.getElementById('up-icon').textContent='❌';
+        document.getElementById('up-text').textContent='Error al subir foto';
+        showToast('❌ Error al subir foto', true);
+      }
+    } else {
+      uploadedPhotoUrl = null;
+      document.getElementById('up-icon').textContent='✅';
+      document.getElementById('up-text').textContent=file.name + ' · cargada (demo)';
+      showToast('📷 Foto adjuntada');
+    }
+  };
+  input.click();
+}
+
+async function deleteReport(id) {
+  if (!confirm('¿Seguro que querés eliminar este reporte?')) return;
+  if (dbOk && sb) {
+    try {
+      const { error } = await sb.from('reportes').delete().eq('id', id);
+      if (error) throw error;
+      allReports = allReports.filter(r => r.id !== id);
+      updateUI();
+      closeSheetDirect();
+      showToast('🗑️ Reporte eliminado');
+    } catch(e) {
+      console.error('Error al eliminar:', e);
+      showToast('❌ Error al eliminar', true);
+    }
+  } else {
+    allReports = allReports.filter(r => r.id !== id);
+    updateUI();
+    closeSheetDirect();
+    showToast('🗑️ Reporte eliminado');
+  }
+}
+
+const screens = { home:'sc-home', alerts:'sc-alerts', map:'sc-map', report:'sc-report', stats:'sc-stats' };
+let currentScreen = 'home';
+function goTo(name) {
+  document.getElementById(screens[currentScreen]).classList.remove('active');
+  document.getElementById(screens[name]).classList.add('active');
+  currentScreen = name;
+  if(name==='report') {
+    document.getElementById('rep-page').style.display='block';
+    document.getElementById('rep-success').classList.remove('show');
+    repStep(1);
+  }
+  window.scrollTo(0,0);
+}
+
+function showToast(msg, isErr=false) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.className = 'toast' + (isErr?' toast-err':'');
+  t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'), 2800);
+}
+function setEl(id, val) { const el=document.getElementById(id); if(el) el.textContent=val; }
+function escHtml(s) { return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function timeAgo(iso) {
+  const diff = Date.now() - new Date(iso).getTime();
+  const m = Math.floor(diff/60000);
+  if(m<1) return 'ahora mismo';
+  if(m<60) return `hace ${m} min`;
+  const h = Math.floor(m/60);
+  if(h<24) return `hace ${h}h`;
+  const d = Math.floor(h/24);
+  return `hace ${d} día${d!==1?'s':''}`;
+}
+
+(function() {
+  const d = new Date();
+  setEl('home-date', `Zona Escazú · Activo · ${d.toLocaleDateString('es-CR',{weekday:'long',day:'numeric',month:'short'})}`);
+  initSupabase();
+})();
+</script>
+</body>
+</html>
