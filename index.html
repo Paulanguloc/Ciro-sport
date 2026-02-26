@@ -386,7 +386,7 @@ select.input{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w
       </div>
       <div class="btn-2col" style="margin-bottom:8px;">
         <button class="btn btn-ghost" onclick="repStep(2)">← Atrás</button>
-        <button class="btn btn-primary" id="submit-btn" onclick="submitReport()">🚀 Enviar</button>
+        <button class="btn btn-primary" id="submit-btn" onclick="validarYEnviar()">🚀 Enviar</button>
       </div>
       <p style="font-size:10px;color:var(--text3);text-align:center;line-height:1.5;">Al enviar confirmás que la información es verídica.</p>
     </div>
@@ -742,6 +742,30 @@ async function voteReportById(id) {
   }
 }
 
+function validarYEnviar() {
+  const cedula = document.getElementById('rep-cedula').value.trim();
+  const phone = document.getElementById('rep-phone').value.trim();
+
+  if (!cedula) { showToast('⚠️ La cédula es obligatoria', true); document.getElementById('rep-cedula').focus(); return; }
+  const cedulaLimpia = cedula.replace(/[-\s]/g, '');
+  const cedulaFisica = /^[1-9]\d{8}$/.test(cedulaLimpia);
+  const cedulaJuridica = /^3\d{9}$/.test(cedulaLimpia);
+  const cedulaResidente = /^[157]\d{11}$/.test(cedulaLimpia);
+  if (!cedulaFisica && !cedulaJuridica && !cedulaResidente) {
+    showToast('⚠️ Cédula inválida. Ej: 1-1234-5678', true);
+    document.getElementById('rep-cedula').focus(); return;
+  }
+
+  if (!phone) { showToast('⚠️ El teléfono es obligatorio', true); document.getElementById('rep-phone').focus(); return; }
+  const phoneLimpio = phone.replace(/[\s\-\+]/g, '');
+  if (!/^\d{8,11}$/.test(phoneLimpio)) {
+    showToast('⚠️ Teléfono inválido. Ej: 88888888', true);
+    document.getElementById('rep-phone').focus(); return;
+  }
+
+  submitReport();
+}
+
 async function submitReport() {
   const title = document.getElementById('rep-title').value.trim();
   const dist = document.getElementById('rep-dist').value;
@@ -750,8 +774,18 @@ async function submitReport() {
   if (!title) { showToast('⚠️ Ingresá un título', true); return; }
   if (!dist) { showToast('⚠️ Seleccioná un distrito', true); return; }
   if (!cedula) { showToast('⚠️ La cédula es obligatoria', true); return; }
+  const cedulaLimpia = cedula.replace(/[-\s]/g, '');
+  const cedulaFisica = /^[1-9]\d{8}$/.test(cedulaLimpia);
+  const cedulaJuridica = /^3\d{9}$/.test(cedulaLimpia);
+  const cedulaResidente = /^[157]\d{11}$/.test(cedulaLimpia);
+  if (!cedulaFisica && !cedulaJuridica && !cedulaResidente) {
+    showToast('⚠️ Cédula inválida. Ej: 1-1234-5678', true); return;
+  }
   if (!phone) { showToast('⚠️ El teléfono es obligatorio', true); return; }
-  const btn = document.getElementById('submit-btn');
+  const phoneLimpio = phone.replace(/[\s\-\+]/g, '');
+  if (!/^\d{8,11}$/.test(phoneLimpio)) {
+    showToast('⚠️ Teléfono inválido. Ej: 88888888', true); return;
+  }  const btn = document.getElementById('submit-btn');
   btn.textContent = '⏳ Enviando...'; btn.disabled = true;
   const newReport = {
     titulo: title,
