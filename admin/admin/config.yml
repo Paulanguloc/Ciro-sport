@@ -1,0 +1,104 @@
+backend:
+  name: github
+  repo: Paulanguloc/Ciro-sport
+  branch: main
+
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: dlz6uc574
+    api_key: TU_API_KEY  # Pon aquí tu API Key de Cloudinary
+
+publish_mode: editorial_workflow
+
+collections:
+  - name: "galeria"
+    label: "Galería"
+    folder: "_galeria"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Imagen 1", name: "imagen_1", widget: "image", required: false }
+      - { label: "Imagen 2", name: "imagen_2", widget: "image", required: false }
+      - { label: "Imagen 3", name: "imagen_3", widget: "image", required: false }
+      - { label: "Imagen 4", name: "imagen_4", widget: "image", required: false }
+      - { label: "Imagen 5", name: "imagen_5", widget: "image", required: false }
+      - { label: "Imagen 6", name: "imagen_6", widget: "image", required: false }
+      - { label: "Imagen 7", name: "imagen_7", widget: "image", required: false }
+      - { label: "Imagen 8", name: "imagen_8", widget: "image", required: false }
+      - { label: "Imagen 9", name: "imagen_9", widget: "image", required: false }
+      - { label: "Imagen 10", name: "imagen_10", widget: "image", required: false }
+
+  - name: "productos"
+    label: "Productos"
+    files:
+      - name: "camisetas_olimpicas"
+        label: "Camisetas Olímpicas"
+        file: "_productos/camisetas_olimpicas.yml"
+        fields:
+          - { label: "Imagen 1", name: "imagen_1", widget: "image", required: false }
+          - { label: "Imagen 2", name: "imagen_2", widget: "image", required: false }
+          - { label: "Imagen 3", name: "imagen_3", widget: "image", required: false }
+          - { label: "Imagen 4", name: "imagen_4", widget: "image", required: false }
+          - { label: "Imagen 5", name: "imagen_5", widget: "image", required: false }
+
+      - name: "camisetas_oversize"
+        label: "Camisetas Oversize"
+        file: "_productos/camisetas_oversize.yml"
+        fields:
+          - { label: "Imagen 1", name: "imagen_1", widget: "image", required: false }
+          - { label: "Imagen 2", name: "imagen_2", widget: "image", required: false }
+          - { label: "Imagen 3", name: "imagen_3", widget: "image", required: false }
+          - { label: "Imagen 4", name: "imagen_4", widget: "image", required: false }
+          - { label: "Imagen 5", name: "imagen_5", widget: "image", required: false }
+
+      - name: "conjuntos_deportivos"
+        label: "Conjuntos Deportivos"
+        file: "_productos/conjuntos_deportivos.yml"
+        fields:
+          - { label: "Imagen 1", name: "imagen_1", widget: "image", required: false }
+          - { label: "Imagen 2", name: "imagen_2", widget: "image", required: false }
+          - { label: "Imagen 3", name: "imagen_3", widget: "image", required: false }
+          - { label: "Imagen 4", name: "imagen_4", widget: "image", required: false }
+          - { label: "Imagen 5", name: "imagen_5", widget: "image", required: false }
+
+      - name: "tennis"
+        label: "Tennis"
+        file: "_productos/tennis.yml"
+        fields:
+          - { label: "Imagen 1", name: "imagen_1", widget: "image", required: false }
+          - { label: "Imagen 2", name: "imagen_2", widget: "image", required: false }
+          - { label: "Imagen 3", name: "imagen_3", widget: "image", required: false }
+          - { label: "Imagen 4", name: "imagen_4", widget: "image", required: false }
+          - { label: "Imagen 5", name: "imagen_5", widget: "image", required: false }
+
+      - name: "proteina"
+        label: "Proteína"
+        file: "_productos/proteina.yml"
+        fields:
+          - { label: "Imagen 1", name: "imagen_1", widget: "image", required: false }
+          - { label: "Imagen 2", name: "imagen_2", widget: "image", required: false }
+          - { label: "Imagen 3", name: "imagen_3", widget: "image", required: false }
+          - { label: "Imagen 4", name: "imagen_4", widget: "image", required: false }
+          - { label: "Imagen 5", name: "imagen_5", widget: "image", required: false }
+
+      - name: "creatina"
+        label: "Creatina"
+        file: "_productos/creatina.yml"
+        fields:
+          - { label: "Imagen 1", name: "imagen_1", widget: "image", required: false }
+          - { label: "Imagen 2", name: "imagen_2", widget: "image", required: false }
+          - { label: "Imagen 3", name: "imagen_3", widget: "image", required: false }
+          - { label: "Imagen 4", name: "imagen_4", widget: "image", required: false }
+          - { label: "Imagen 5", name: "imagen_5", widget: "image", required: false }
+
+      - name: "camisetas_deportivas"
+        label: "Camisetas Deportivas"
+        file: "_productos/camisetas_deportivas.yml"
+        fields:
+          - { label: "Imagen 1", name: "imagen_1", widget: "image", required: false }
+          - { label: "Imagen 2", name: "imagen_2", widget: "image", required: false }
+          - { label: "Imagen 3", name: "imagen_3", widget: "image", required: false }
+          - { label: "Imagen 4", name: "imagen_4", widget: "image", required: false }
+          - { label: "Imagen 5", name: "imagen_5", widget: "image", required: false }
