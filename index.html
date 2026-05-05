@@ -3,370 +3,924 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ciro Sport</title>
-<meta property="og:title" content="Ciro Sport - Todo para tu vida Fitness">
-<meta property="og:description" content="Camisetas, tenis, conjuntos deportivos, proteínas y más. ¡Contáctanos por WhatsApp!">
-<meta property="og:image" content="https://res.cloudinary.com/dlz6uc574/image/upload/v1771649387/Photoroom-20251123_215209030_blbzzk.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:type" content="website">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Ciro Sport - Todo para tu vida Fitness">
-<meta name="twitter:description" content="Camisetas, tenis, conjuntos deportivos, proteínas y más.">
-<meta name="twitter:image" content="https://res.cloudinary.com/dlz6uc574/image/upload/v1771649387/Photoroom-20251123_215209030_blbzzk.png">
+<title>CiroSport - Ropa Deportiva & Suplementos</title>
+<link rel="icon" href="https://res.cloudinary.com/dlz6uc574/image/upload/v1771649387/Photoroom-20251123_215209030_blbzzk.png">
 <style>
-:root{--accent:#00ff88;}
-body{margin:0;font-family:Arial,sans-serif;background:#000;color:#fff;overflow-x:hidden;}
-header{position:sticky;top:0;z-index:2000;background:#000;padding:14px;display:flex;justify-content:space-between;align-items:center;border-bottom:2px solid var(--accent);}
-.logo{color:var(--accent);font-weight:bold;font-size:24px;}
-.menu-btn,.cart-btn{font-size:26px;color:var(--accent);cursor:pointer;position:relative;}
-.cart-count{position:absolute;top:-6px;right:-10px;background:var(--accent);color:#000;font-size:12px;border-radius:12px;padding:2px 6px;display:none;}
-nav{position:fixed;top:0;left:-100%;width:260px;height:100%;background:#111;transition:.3s;z-index:3000;}
-.menu-header{text-align:center;padding:20px;border-bottom:1px solid #222;}
-.menu-logo{width:80px;height:80px;border-radius:50%;background:#1b1b1b url('https://res.cloudinary.com/dlz6uc574/image/upload/v1771649387/Photoroom-20251123_215209030_blbzzk.png') center/cover no-repeat;margin:auto;border:2px solid var(--accent);}
-nav a{display:block;padding:15px;color:#fff;text-decoration:none;border-bottom:1px solid #222;}
-nav a:hover{background:var(--accent);color:#000;}
-.overlay{position:fixed;inset:0;background:#000a;display:none;z-index:2500;}
-.container{padding:18px;}
-.section-title{color:var(--accent);font-size:22px;margin:10px 0 18px 0;font-weight:bold;}
-.cat-title{color:#fff;font-size:16px;margin:14px 0 8px 0;font-weight:bold;border-left:4px solid var(--accent);padding-left:8px;}
-.hero{text-align:center;padding:20px 0 10px;}
-.hero img{width:180px;border-radius:50%;border:3px solid var(--accent);}
-.product{background:#111;border-radius:16px;margin-bottom:25px;padding:14px;box-shadow:0 0 12px #00ff8833;transition:transform 0.3s,box-shadow 0.3s;}
-.product:hover{transform:translateY(-5px);box-shadow:0 15px 30px rgba(0,255,136,0.5);}
-.product h2{margin:6px 0 10px 0;}
-.price{color:var(--accent);font-size:20px;margin:10px 0;font-weight:bold;}
-button,input{padding:10px;margin:6px 0;border-radius:10px;border:none;font-size:16px;}
-button{cursor:pointer;width:100%;}
-input[type=number]{-moz-appearance:textfield;}
-input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0;}
-.carousel{position:relative;overflow:hidden;border-radius:14px;margin-bottom:15px;}
-.carousel-track{display:flex;transition:transform .35s ease;}
-.carousel-track img{width:100%;flex-shrink:0;border-radius:12px;object-fit:cover;max-height:300px;}
-.carousel-controls{position:absolute;top:50%;width:100%;display:flex;justify-content:space-between;transform:translateY(-50%);}
-.carousel-controls span{background:#000a;color:var(--accent);padding:8px 12px;font-size:20px;cursor:pointer;}
-#modal{position:fixed;inset:0;background:#000c;display:none;align-items:center;justify-content:center;z-index:4000;}
-.modal-content{background:#101010;padding:20px;border-radius:16px;width:92%;max-width:420px;max-height:80vh;overflow-y:auto;}
-.close{float:right;color:var(--accent);font-size:22px;cursor:pointer;}
-.whatsapp-float{position:fixed;bottom:16px;right:16px;background:#25D366;color:#fff;font-size:26px;padding:16px;border-radius:50%;text-decoration:none;box-shadow:0 0 18px #25D366aa;z-index:1500;}
-.galeria-horizontal{display:flex;overflow-x:auto;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;margin-bottom:10px;}
-.galeria-horizontal img{flex:0 0 auto;width:180px;height:180px;object-fit:cover;border-radius:15px;cursor:pointer;border:2px solid var(--accent);margin-right:10px;transition:transform 0.3s,box-shadow 0.3s;}
-.galeria-horizontal img:hover{transform:scale(1.05);box-shadow:0 10px 25px rgba(0,255,136,0.5);}
-.galeria-horizontal::-webkit-scrollbar{display:none;}
-.color-btn{display:inline-block;padding:6px 12px;margin:4px;border-radius:8px;border:2px solid #fff;cursor:pointer;background:#222;color:#fff;font-weight:bold;user-select:none;transition:0.2s;}
-.color-btn.selected{border:3px solid var(--accent);background:var(--accent);color:#000;position:relative;}
-.color-btn.selected::after{content:"✔";position:absolute;top:-6px;right:-6px;background:#fff;color:#000;border-radius:50%;width:18px;height:18px;font-size:14px;text-align:center;line-height:18px;}
-.size-btn{display:inline-block;margin:4px;padding:8px 12px;border-radius:6px;border:1px solid #fff;cursor:pointer;transition:transform 0.2s;user-select:none;background:#222;color:#fff;font-weight:bold;}
-.size-btn.selected{background:var(--accent);color:#000;transform:scale(1.1);}
-.cant-container{display:flex;align-items:center;margin:6px 0;}
-.cant-container button{width:32px;height:32px;padding:0;margin:0;background:#222;color:#fff;font-weight:bold;border-radius:6px;cursor:pointer;font-size:20px;}
-.cant-container input{text-align:center;width:50px;margin:0 6px;border-radius:6px;background:#222;color:#fff;font-weight:bold;border:none;}
-footer{margin-top:30px;text-align:center;color:#00ff88;font-weight:bold;padding:20px;border-top:2px solid var(--accent);}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700;900&display=swap');
+:root{
+  --verde:#2ecc40;
+  --verde-dark:#1a8c27;
+  --verde-neon:#39ff14;
+  --negro:#0a0a0a;
+  --negro2:#111;
+  --negro3:#1a1a1a;
+  --gris:#888;
+  --blanco:#fff;
+  --card:#141414;
+  --border:#222;
+  --accent:#2ecc40;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Montserrat',sans-serif;background:var(--negro);color:var(--blanco);overflow-x:hidden;}
+
+/* ── SCROLLBAR ── */
+::-webkit-scrollbar{width:6px;}
+::-webkit-scrollbar-track{background:#111;}
+::-webkit-scrollbar-thumb{background:var(--verde);border-radius:10px;}
+
+/* ── TOPBAR ── */
+.topbar{background:var(--verde-dark);text-align:center;padding:8px;font-size:12px;font-weight:600;letter-spacing:1px;}
+.topbar span{color:#fff;}
+
+/* ── HEADER ── */
+header{position:sticky;top:0;z-index:2000;background:rgba(10,10,10,0.97);backdrop-filter:blur(10px);border-bottom:2px solid var(--verde);padding:0 20px;}
+.header-inner{max-width:1200px;margin:auto;display:flex;align-items:center;justify-content:space-between;height:65px;}
+.logo-wrap{display:flex;align-items:center;gap:12px;text-decoration:none;}
+.logo-wrap img{width:48px;height:48px;border-radius:50%;border:2px solid var(--verde);object-fit:cover;}
+.logo-text{font-family:'Bebas Neue',sans-serif;font-size:28px;color:var(--verde);letter-spacing:2px;line-height:1;}
+.logo-sub{font-size:9px;color:#888;letter-spacing:3px;text-transform:uppercase;}
+.header-nav{display:flex;gap:6px;align-items:center;}
+.header-nav a{color:#ccc;text-decoration:none;font-size:13px;font-weight:600;padding:8px 14px;border-radius:8px;transition:.2s;letter-spacing:.5px;}
+.header-nav a:hover,.header-nav a.active{color:var(--verde);}
+.header-right{display:flex;align-items:center;gap:16px;}
+.cart-btn{position:relative;cursor:pointer;font-size:22px;color:var(--verde);}
+.cart-count{position:absolute;top:-8px;right:-10px;background:var(--verde);color:#000;font-size:11px;font-weight:900;border-radius:12px;padding:1px 6px;display:none;}
+.menu-btn{display:none;font-size:26px;color:var(--verde);cursor:pointer;}
+
+/* ── HERO ── */
+.hero{background:linear-gradient(135deg,#0a0a0a 0%,#0d1f10 50%,#0a0a0a 100%);padding:70px 20px;text-align:center;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;inset:0;background:url('https://res.cloudinary.com/dlz6uc574/image/upload/v1771649387/Photoroom-20251123_215209030_blbzzk.png') center/200px no-repeat;opacity:.04;}
+.hero-logo{width:130px;height:130px;border-radius:50%;border:4px solid var(--verde);object-fit:cover;margin-bottom:20px;box-shadow:0 0 40px #2ecc4055;}
+.hero h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(48px,10vw,90px);color:var(--verde);letter-spacing:4px;line-height:1;margin-bottom:10px;}
+.hero p{color:#aaa;font-size:15px;max-width:450px;margin:0 auto 30px;line-height:1.7;}
+.hero-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;}
+.btn-primary{background:var(--verde);color:#000;font-weight:900;padding:14px 32px;border-radius:12px;text-decoration:none;font-size:14px;letter-spacing:1px;transition:.2s;border:none;cursor:pointer;}
+.btn-primary:hover{background:var(--verde-neon);transform:translateY(-2px);}
+.btn-outline{background:transparent;color:var(--verde);font-weight:700;padding:14px 32px;border-radius:12px;text-decoration:none;font-size:14px;letter-spacing:1px;transition:.2s;border:2px solid var(--verde);}
+.btn-outline:hover{background:var(--verde);color:#000;}
+
+/* ── STATS BAR ── */
+.stats-bar{background:var(--negro3);padding:20px;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+.stats-inner{max-width:1200px;margin:auto;display:flex;justify-content:space-around;flex-wrap:wrap;gap:16px;}
+.stat{text-align:center;}
+.stat .num{font-family:'Bebas Neue',sans-serif;font-size:32px;color:var(--verde);}
+.stat .lbl{font-size:11px;color:#888;letter-spacing:1px;text-transform:uppercase;}
+
+/* ── SECTIONS ── */
+.section{padding:60px 20px;max-width:1200px;margin:auto;}
+.section-title{font-family:'Bebas Neue',sans-serif;font-size:42px;color:var(--verde);letter-spacing:3px;margin-bottom:6px;}
+.section-sub{color:#666;font-size:13px;margin-bottom:40px;letter-spacing:.5px;}
+.section-divider{height:2px;background:linear-gradient(90deg,var(--verde),transparent);margin-bottom:40px;border-radius:2px;}
+
+/* ── CATEGORIES ── */
+.cats{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:36px;}
+.cat-btn{padding:8px 20px;border-radius:30px;border:1.5px solid #333;background:transparent;color:#888;font-size:13px;font-weight:600;cursor:pointer;transition:.2s;font-family:'Montserrat',sans-serif;}
+.cat-btn:hover,.cat-btn.active{background:var(--verde);color:#000;border-color:var(--verde);}
+
+/* ── PRODUCT GRID ── */
+.product-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:22px;}
+.product-card{background:var(--card);border-radius:18px;overflow:hidden;border:1px solid var(--border);transition:.3s;cursor:pointer;text-decoration:none;color:inherit;display:block;}
+.product-card:hover{border-color:var(--verde);transform:translateY(-6px);box-shadow:0 20px 50px rgba(46,204,64,0.15);}
+.product-card:hover .card-overlay{opacity:1;}
+.card-img-wrap{position:relative;overflow:hidden;aspect-ratio:1;}
+.card-img-wrap img{width:100%;height:100%;object-fit:cover;transition:.4s;}
+.product-card:hover .card-img-wrap img{transform:scale(1.06);}
+.card-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.7),transparent);display:flex;align-items:flex-end;justify-content:center;padding:16px;opacity:0;transition:.3s;}
+.card-overlay span{background:var(--verde);color:#000;font-weight:900;font-size:13px;padding:8px 24px;border-radius:10px;letter-spacing:.5px;}
+.card-badge{position:absolute;top:12px;left:12px;background:var(--verde);color:#000;font-size:11px;font-weight:900;padding:4px 10px;border-radius:8px;letter-spacing:.5px;}
+.card-badge.promo{background:#ff4444;color:#fff;}
+.card-body{padding:16px;}
+.card-body h3{font-size:15px;font-weight:700;margin-bottom:6px;line-height:1.3;}
+.card-price{color:var(--verde);font-size:20px;font-weight:900;font-family:'Bebas Neue',sans-serif;letter-spacing:1px;}
+.card-promo{color:#888;font-size:12px;margin-top:4px;}
+
+/* ── PROMO CARDS ── */
+.promo-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px;}
+.promo-card{background:linear-gradient(135deg,#111,#1a2e1a);border:1px solid var(--verde);border-radius:18px;padding:24px;transition:.3s;}
+.promo-card:hover{transform:translateY(-4px);box-shadow:0 15px 40px rgba(46,204,64,0.2);}
+.promo-icon{font-size:36px;margin-bottom:12px;}
+.promo-card h3{font-family:'Bebas Neue',sans-serif;font-size:22px;color:var(--verde);letter-spacing:1px;margin-bottom:8px;}
+.promo-card p{color:#aaa;font-size:13px;line-height:1.6;}
+.promo-price{margin-top:14px;font-family:'Bebas Neue',sans-serif;font-size:28px;color:#fff;}
+.promo-price span{color:var(--verde);}
+
+/* ── GALLERY ── */
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;}
+.gallery-item{border-radius:14px;overflow:hidden;aspect-ratio:1;cursor:pointer;border:2px solid transparent;transition:.3s;}
+.gallery-item:hover{border-color:var(--verde);transform:scale(1.02);}
+.gallery-item img{width:100%;height:100%;object-fit:cover;}
+
+/* ── CONTACT ── */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;}
+.contact-card{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:30px;}
+.contact-card h3{font-family:'Bebas Neue',sans-serif;font-size:26px;color:var(--verde);margin-bottom:20px;letter-spacing:1px;}
+.contact-item{display:flex;align-items:center;gap:14px;padding:14px 0;border-bottom:1px solid var(--border);}
+.contact-item:last-child{border-bottom:none;}
+.contact-icon{font-size:22px;width:42px;height:42px;background:#1a2e1a;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.contact-info .label{font-size:11px;color:#666;text-transform:uppercase;letter-spacing:1px;}
+.contact-info .value{font-size:14px;font-weight:600;color:#ddd;margin-top:2px;}
+.contact-info a{color:var(--verde);text-decoration:none;}
+.contact-info a:hover{text-decoration:underline;}
+.social-btns{display:flex;flex-direction:column;gap:12px;margin-top:10px;}
+.social-btn{display:flex;align-items:center;gap:12px;padding:14px 18px;border-radius:12px;text-decoration:none;font-weight:700;font-size:14px;transition:.2s;}
+.social-btn:hover{transform:translateX(4px);}
+.social-btn.wa{background:#25d36620;color:#25d366;border:1px solid #25d36640;}
+.social-btn.wa:hover{background:#25d366;color:#fff;}
+.social-btn.ig{background:#e1306c20;color:#e1306c;border:1px solid #e1306c40;}
+.social-btn.ig:hover{background:#e1306c;color:#fff;}
+.social-btn.fb{background:#1877f220;color:#1877f2;border:1px solid #1877f240;}
+.social-btn.fb:hover{background:#1877f2;color:#fff;}
+.social-btn.waze{background:#00c1e820;color:#00c1e8;border:1px solid #00c1e840;}
+.social-btn.waze:hover{background:#00c1e8;color:#fff;}
+.social-btn img{width:22px;height:22px;border-radius:4px;}
+
+/* ── SINPE BOX ── */
+.sinpe-box{background:linear-gradient(135deg,#0d1f10,#111);border:2px solid var(--verde);border-radius:18px;padding:30px;text-align:center;margin-top:20px;}
+.sinpe-box h3{font-family:'Bebas Neue',sans-serif;font-size:28px;color:var(--verde);letter-spacing:2px;margin-bottom:8px;}
+.sinpe-number{font-family:'Bebas Neue',sans-serif;font-size:48px;color:#fff;letter-spacing:4px;margin:10px 0;}
+.sinpe-name{color:#888;font-size:13px;}
+.sinpe-copy{background:var(--verde);color:#000;font-weight:900;border:none;padding:10px 24px;border-radius:10px;cursor:pointer;font-size:14px;margin-top:14px;font-family:'Montserrat',sans-serif;}
+.sinpe-copy:hover{background:var(--verde-neon);}
+
+/* ── FOOTER ── */
+footer{background:#050505;border-top:2px solid var(--border);padding:50px 20px 24px;}
+.footer-inner{max-width:1200px;margin:auto;}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:40px;}
+.footer-brand .logo-text{font-family:'Bebas Neue',sans-serif;font-size:32px;color:var(--verde);letter-spacing:3px;}
+.footer-brand p{color:#555;font-size:13px;line-height:1.7;margin-top:10px;max-width:260px;}
+.footer-col h4{color:var(--verde);font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:16px;}
+.footer-col a{display:block;color:#555;font-size:13px;text-decoration:none;margin-bottom:10px;transition:.2s;}
+.footer-col a:hover{color:var(--verde);}
+.footer-bottom{border-top:1px solid var(--border);padding-top:20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:gap:10px;}
+.footer-bottom p{color:#444;font-size:12px;}
+.footer-bottom span{color:var(--verde);}
+
+/* ── MOBILE NAV ── */
+nav.mobile-nav{position:fixed;top:0;left:-100%;width:280px;height:100%;background:#0d0d0d;transition:.35s cubic-bezier(.4,0,.2,1);z-index:3000;border-right:1px solid var(--border);}
+.mobile-nav-header{padding:24px 20px 16px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:12px;}
+.mobile-nav-header img{width:46px;height:46px;border-radius:50%;border:2px solid var(--verde);object-fit:cover;}
+.mobile-nav-header .name{font-family:'Bebas Neue',sans-serif;font-size:22px;color:var(--verde);letter-spacing:2px;}
+.mobile-nav a{display:flex;align-items:center;gap:12px;padding:16px 20px;color:#aaa;text-decoration:none;border-bottom:1px solid #161616;font-weight:600;font-size:14px;transition:.2s;}
+.mobile-nav a:hover{background:#161616;color:var(--verde);padding-left:28px;}
+.overlay{position:fixed;inset:0;background:#000b;display:none;z-index:2500;}
+
+/* ── CART DRAWER ── */
+.cart-drawer{position:fixed;right:-420px;top:0;width:100%;max-width:420px;height:100%;background:#0d0d0d;border-left:1px solid var(--border);z-index:3500;transition:.35s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column;}
+.cart-header{padding:20px 24px;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;}
+.cart-header h2{font-family:'Bebas Neue',sans-serif;font-size:26px;color:var(--verde);letter-spacing:2px;}
+.cart-close{font-size:22px;cursor:pointer;color:#888;}
+.cart-close:hover{color:var(--verde);}
+.cart-items{flex:1;overflow-y:auto;padding:16px 24px;}
+.cart-empty{text-align:center;padding:60px 20px;color:#444;}
+.cart-empty .icon{font-size:48px;margin-bottom:12px;}
+.cart-item{display:flex;gap:14px;padding:16px 0;border-bottom:1px solid var(--border);}
+.cart-item img{width:70px;height:70px;border-radius:10px;object-fit:cover;flex-shrink:0;}
+.cart-item-info{flex:1;}
+.cart-item-info h4{font-size:13px;font-weight:700;margin-bottom:4px;line-height:1.3;}
+.cart-item-info .price{color:var(--verde);font-family:'Bebas Neue',sans-serif;font-size:18px;}
+.cart-item-del{color:#ff4444;cursor:pointer;font-size:18px;padding:4px;}
+.qty-control{display:flex;align-items:center;gap:8px;margin-top:8px;}
+.qty-control button{width:28px;height:28px;background:#222;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:16px;font-weight:bold;}
+.qty-control span{font-weight:700;min-width:20px;text-align:center;}
+.cart-footer{padding:20px 24px;border-top:1px solid var(--border);}
+.cart-total{display:flex;justify-content:space-between;font-size:18px;font-weight:700;margin-bottom:16px;}
+.cart-total .amount{color:var(--verde);font-family:'Bebas Neue',sans-serif;font-size:24px;}
+.btn-whatsapp{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:16px;background:#25d366;color:#fff;font-weight:900;font-size:16px;border:none;border-radius:14px;cursor:pointer;font-family:'Montserrat',sans-serif;letter-spacing:.5px;transition:.2s;}
+.btn-whatsapp:hover{background:#1ebc57;transform:translateY(-2px);}
+
+/* ── PRODUCT MODAL ── */
+.product-modal{position:fixed;inset:0;z-index:4000;display:none;align-items:center;justify-content:center;padding:16px;}
+.product-modal.open{display:flex;}
+.pm-overlay{position:absolute;inset:0;background:#000c;}
+.pm-content{position:relative;background:#111;border-radius:22px;width:100%;max-width:900px;max-height:90vh;overflow-y:auto;border:1px solid var(--border);z-index:1;}
+.pm-grid{display:grid;grid-template-columns:1fr 1fr;}
+.pm-imgs{position:sticky;top:0;}
+.pm-main-img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:22px 0 0 22px;}
+.pm-thumbs{display:flex;gap:6px;padding:10px;overflow-x:auto;background:#0d0d0d;}
+.pm-thumbs img{width:60px;height:60px;object-fit:cover;border-radius:8px;cursor:pointer;border:2px solid transparent;flex-shrink:0;transition:.2s;}
+.pm-thumbs img:hover,.pm-thumbs img.active{border-color:var(--verde);}
+.pm-info{padding:28px;}
+.pm-close{position:absolute;top:14px;right:14px;background:#1a1a1a;border:none;color:#aaa;width:36px;height:36px;border-radius:50%;font-size:18px;cursor:pointer;z-index:2;}
+.pm-close:hover{background:var(--verde);color:#000;}
+.pm-name{font-family:'Bebas Neue',sans-serif;font-size:32px;letter-spacing:2px;margin-bottom:6px;line-height:1.1;}
+.pm-price{color:var(--verde);font-family:'Bebas Neue',sans-serif;font-size:38px;letter-spacing:2px;margin-bottom:16px;}
+.pm-desc{color:#888;font-size:13px;line-height:1.7;margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid var(--border);}
+.pm-label{font-size:12px;font-weight:700;color:#aaa;text-transform:uppercase;letter-spacing:1px;margin-bottom:10px;}
+.options-row{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px;}
+.opt-btn{padding:8px 16px;border-radius:8px;border:1.5px solid #333;background:transparent;color:#aaa;font-size:13px;font-weight:600;cursor:pointer;transition:.2s;font-family:'Montserrat',sans-serif;}
+.opt-btn:hover,.opt-btn.selected{border-color:var(--verde);background:var(--verde);color:#000;}
+.pm-qty{display:flex;align-items:center;gap:12px;margin-bottom:24px;}
+.pm-qty button{width:38px;height:38px;background:#222;color:#fff;border:1px solid #333;border-radius:10px;font-size:20px;cursor:pointer;}
+.pm-qty span{font-size:18px;font-weight:700;min-width:30px;text-align:center;}
+.pm-add{width:100%;padding:16px;background:var(--verde);color:#000;font-weight:900;font-size:16px;border:none;border-radius:14px;cursor:pointer;font-family:'Montserrat',sans-serif;letter-spacing:.5px;transition:.2s;}
+.pm-add:hover{background:var(--verde-neon);transform:translateY(-2px);}
+.pm-promos{background:#0d1f10;border-radius:12px;padding:16px;margin-top:16px;}
+.pm-promos h4{color:var(--verde);font-size:13px;font-weight:700;margin-bottom:8px;}
+.pm-promos p{color:#aaa;font-size:12px;line-height:1.6;}
+
+/* ── WHATSAPP FLOAT ── */
+.wa-float{position:fixed;bottom:24px;right:24px;background:#25d366;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;text-decoration:none;box-shadow:0 4px 20px #25d36650;z-index:1500;transition:.2s;}
+.wa-float:hover{transform:scale(1.1);}
+
+/* ── TOAST ── */
+.toast{position:fixed;bottom:100px;right:24px;background:#1a2e1a;border:1px solid var(--verde);color:var(--verde);padding:12px 20px;border-radius:12px;font-weight:700;font-size:14px;z-index:9999;animation:toastIn .3s ease;display:none;}
+@keyframes toastIn{from{transform:translateX(100px);opacity:0}to{transform:translateX(0);opacity:1}}
+
+/* ── SKELETON ── */
+.skeleton{background:linear-gradient(90deg,#1a1a1a 25%,#242424 50%,#1a1a1a 75%);background-size:200% 100%;animation:shimmer 1.5s infinite;border-radius:14px;}
+@keyframes shimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}
+
+/* ── RESPONSIVE ── */
+@media(max-width:900px){
+  .header-nav{display:none;}
+  .menu-btn{display:block;}
+  .pm-grid{grid-template-columns:1fr;}
+  .pm-main-img{border-radius:22px 22px 0 0;}
+  .contact-grid{grid-template-columns:1fr;}
+  .footer-grid{grid-template-columns:1fr 1fr;}
+}
+@media(max-width:600px){
+  .product-grid{grid-template-columns:repeat(2,1fr);gap:12px;}
+  .gallery-grid{grid-template-columns:repeat(2,1fr);}
+  .footer-grid{grid-template-columns:1fr;}
+  .hero h1{font-size:52px;}
+  .hero-logo{width:100px;height:100px;}
+}
 </style>
 </head>
 <body>
 
-<div style="text-align:center;padding:10px;background:#fff;">
-  <p style="font-weight:bold;font-size:18px;margin-bottom:8px;">Contáctenos</p>
-  <a href="https://www.instagram.com/tshir_t31" target="_blank" style="margin:10px;">
-    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" width="40" height="40" alt="Instagram">
-  </a>
-  <a href="https://www.facebook.com/iwillcan.zung" target="_blank" style="margin:10px;">
-    <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" width="40" height="40" alt="Facebook">
-  </a>
-  <a href="https://wa.me/50672028728" target="_blank" style="margin:10px;">
-    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" width="40" height="40" alt="WhatsApp">
-  </a>
+<!-- TOPBAR -->
+<div class="topbar">
+  <span>🚚 Entrega en Escazú Centro &nbsp;|&nbsp; 📱 SINPE Móvil: 7008-2741 &nbsp;|&nbsp; 💪 Ropa Deportiva & Suplementos</span>
 </div>
 
+<!-- HEADER -->
 <header>
-  <div class="menu-btn" onclick="toggleMenu()">☰</div>
-  <div class="logo">CIRO SPORT</div>
-  <div class="cart-btn" onclick="toggleCart()">🛒<div class="cart-count" id="cartCount">0</div></div>
-</header>
-
-<div class="overlay" id="overlay" onclick="toggleMenu()"></div>
-<nav id="menu">
-  <div class="menu-header">
-    <div class="menu-logo"></div>
-    <div style="color:#00ff88;font-weight:bold">CIRO SPORT</div>
-  </div>
-  <a href="#" onclick="goInicio()">Inicio</a>
-  <a href="#promos" onclick="goPromos()">Promociones</a>
-  <a href="#galeria" onclick="goGaleria()">Galería</a>
-  <a href="#productos" onclick="goProductos()">Productos</a>
-</nav>
-
-<div class="container">
-
-  <!-- INICIO -->
-  <div id="inicio" class="hero">
-    <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771649387/Photoroom-20251123_215209030_blbzzk.png" alt="Ciro Sport Logo">
-    <div class="section-title" style="margin-top:14px;">Bienvenido a CIRO SPORT 💪</div>
-  </div>
-
-  <!-- PROMOCIONES -->
-  <div id="promos">
-    <div class="section-title">🔥 Promociones</div>
-    <div class="product"><h2>Combo Camisetas Olímpicas</h2><p>3x₡20,000 | 6x₡30,000 | 10x₡45,000</p><div class="price">₡8,000 c/u</div></div>
-    <div class="product"><h2>Combo Camisetas Oversize</h2><p>3x₡25,000</p><div class="price">₡12,000 c/u</div></div>
-    <div class="product"><h2>Combo Camisetas Deportivas</h2><p>3x₡25,000</p><div class="price">₡8,000 c/u</div></div>
-    <div class="product"><h2>Conjuntos Deportivos</h2><p>Unidad ₡20,000</p><div class="price">₡20,000</div></div>
-  </div>
-
-  <!-- GALERÍA UNA SOLA LÍNEA -->
-  <div id="galeria">
-    <div class="section-title">📸 Galería</div>
-    <div class="galeria-horizontal">
-      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771643082/IMG_20260211_210919_uvpjmt.png">
-      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771643079/IMG_20260211_210919_5_gowxms.png">
-      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771643080/IMG_20260211_210919_1_tikcrp.png">
-      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771643076/IMG_20260212_081532_1_ysp5po.png">
-      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771643076/IMG_20260212_081532_3_nidlsp.png">
-      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771965990/dc822db6d18892fe68d182003df68e05_16_n9vcgk.png">
-      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771965956/dc822db6d18892fe68d182003df68e05_12_nluswt.png">
-      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771965955/dc822db6d18892fe68d182003df68e05_15_uwqohl.png">
-      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771965954/dc822db6d18892fe68d182003df68e05_13_g7m9pa.png">
-      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771965931/dc822db6d18892fe68d182003df68e05_17_dpb95k.png">
-      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771965901/dc822db6d18892fe68d182003df68e05_19_scdrmm.png">
-      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771965899/dc822db6d18892fe68d182003df68e05_20_zt979e.png">
-      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771965900/dc822db6d18892fe68d182003df68e05_21_kehvre.png">
-      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771965897/dc822db6d18892fe68d182003df68e05_22_diwlrv.png">
-      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771965892/dc822db6d18892fe68d182003df68e05_23_pzoq8e.png">
-      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771965867/IMG-20260224-WA0039_bwv62w.jpg">
-      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771965863/IMG-20260224-WA0040_s6dbw3.jpg">
-      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771965860/IMG-20260224-WA0044_phqelm.jpg">
-      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771645776/Screenshot_20260103_144217_com_instagram_android_InstagramMainActivity_5_xsc59h.png">
-      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771645355/6362f18afa2e9fef922b0c43ea94f871_trka37.png">
-      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771645514/Screenshot_20260103_144217_com_instagram_android_InstagramMainActivity_3_gnnl1q.png">
-      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771645776/Screenshot_20260103_144217_com_instagram_android_InstagramMainActivity_6_q6eobs.png">
-      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771645779/Screenshot_20260103_144217_com_instagram_android_InstagramMainActivity_4_cvp1ov.png">
-      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771646007/Photoroom-20250301_223811_mpctyd.png">
-      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771645955/Photoroom-20250301_223509_f8pykj.png">
-      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771646038/IMG_20250404_210953_2_w6y9tr.png">
-      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771645970/Photoroom-20250301_223643_i8npdv.png">
-      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771645981/Photoroom-20250301_223716_fgxqr2.png">
-      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771648158/IMG-20260212-WA0211_nwlbyj.jpg">
-      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771648154/IMG-20260212-WA0214_huokan.jpg">
-      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771648138/Screenshot_20260212_142115_com_whatsapp_StatusPlaybackActivity_nupuhq.jpg">
-      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771648133/Screenshot_20260212_142137_com_whatsapp_StatusPlaybackActivity_fggfal.jpg">
-      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771648138/IMG-20260212-WA0209_ihassa.jpg">
-      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771648127/Screenshot_20260205_142559_com_whatsapp_StatusPlaybackActivity_lgkrnz.jpg">
-      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771648131/Screenshot_20260205_142607_com_whatsapp_StatusPlaybackActivity_y0r8ja.jpg">
-      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771648117/Screenshot_20260205_142603_com_whatsapp_StatusPlaybackActivity_ozk60q.jpg">
-      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771646079/Photoroom-20250224_235848_pillqf.png">
-      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771646193/Photoroom-20250224_233715_elc9du.png">
-      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771646017/Photoroom-20250225_000142_luy730.png">
-      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771646019/Photoroom-20250224_235953_lzcedw.png">
-      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771646052/Photoroom-20250225_000044_rakgft.png">
-      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771646092/Photoroom-20250224_235917_llo27n.png">
-      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771646178/Photoroom-20250224_233647_nnihan.png">
-      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771646167/Photoroom-20250224_233613_ryjvcd.png">
-      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771646164/IMG-20250826-WA0008_ezryvm.png">
-      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771646285/IMG-20250620-WA0021_fy6e0u.png">
-      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771646251/IMG-20250620-WA0018_iinpf8.png">
-      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771646205/IMG-20250826-WA0230_molicz.png">
-      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771645882/IMG_20250531_150610_a8hlye.png">
-      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771645871/IMG_20250530_124703_acwhpd.png">
-      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771646321/IMG_20250604_154551_leznbs.png">
-      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771646188/1754318027391_xckwfg.png">
+  <div class="header-inner">
+    <a href="#inicio" class="logo-wrap">
+      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771649387/Photoroom-20251123_215209030_blbzzk.png" alt="CiroSport Logo">
+      <div>
+        <div class="logo-text">CiroSport</div>
+        <div class="logo-sub">Ropa & Suplementos</div>
+      </div>
+    </a>
+    <nav class="header-nav">
+      <a href="#inicio" class="active" onclick="setActive(this)">Inicio</a>
+      <a href="#productos" onclick="setActive(this)">Productos</a>
+      <a href="#promos" onclick="setActive(this)">Promociones</a>
+      <a href="#galeria" onclick="setActive(this)">Galería</a>
+      <a href="#contacto" onclick="setActive(this)">Contacto</a>
+    </nav>
+    <div class="header-right">
+      <div class="cart-btn" onclick="toggleCart()">
+        🛒<div class="cart-count" id="cartCount">0</div>
+      </div>
+      <div class="menu-btn" onclick="toggleMenu()">☰</div>
     </div>
   </div>
+</header>
 
-  <!-- PRODUCTOS -->
-  <div id="productos">
+<!-- OVERLAY -->
+<div class="overlay" id="overlay" onclick="closeAll()"></div>
+
+<!-- MOBILE NAV -->
+<nav class="mobile-nav" id="mobileNav">
+  <div class="mobile-nav-header">
+    <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771649387/Photoroom-20251123_215209030_blbzzk.png" alt="logo">
+    <div class="name">CiroSport</div>
+  </div>
+  <a href="#inicio" onclick="closeAll()">🏠 Inicio</a>
+  <a href="#productos" onclick="closeAll()">🛍 Productos</a>
+  <a href="#promos" onclick="closeAll()">🔥 Promociones</a>
+  <a href="#galeria" onclick="closeAll()">📸 Galería</a>
+  <a href="#contacto" onclick="closeAll()">📞 Contacto</a>
+</nav>
+
+<!-- CART DRAWER -->
+<div class="cart-drawer" id="cartDrawer">
+  <div class="cart-header">
+    <h2>🛒 Carrito</h2>
+    <span class="cart-close" onclick="toggleCart()">✕</span>
+  </div>
+  <div class="cart-items" id="cartItems">
+    <div class="cart-empty"><div class="icon">🛒</div><p>Tu carrito está vacío</p></div>
+  </div>
+  <div class="cart-footer">
+    <div class="cart-total"><span>Total</span><span class="amount" id="cartTotal">₡0</span></div>
+    <button class="btn-whatsapp" onclick="checkout()">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" width="22" height="22"> Comprar por WhatsApp
+    </button>
+  </div>
+</div>
+
+<!-- HERO -->
+<section id="inicio">
+  <div class="hero">
+    <img class="hero-logo" src="https://res.cloudinary.com/dlz6uc574/image/upload/v1771649387/Photoroom-20251123_215209030_blbzzk.png" alt="CiroSport">
+    <h1>CIROSPORT</h1>
+    <p>Tu tienda deportiva en Escazú. Ropa fitness de calidad, suplementos y tenis al mejor precio.</p>
+    <div class="hero-btns">
+      <a href="#productos" class="btn-primary">Ver Productos</a>
+      <a href="#promos" class="btn-outline">Ver Ofertas 🔥</a>
+    </div>
+  </div>
+  <div class="stats-bar">
+    <div class="stats-inner">
+      <div class="stat"><div class="num">7+</div><div class="lbl">Productos</div></div>
+      <div class="stat"><div class="num">100%</div><div class="lbl">Calidad</div></div>
+      <div class="stat"><div class="num">Escazú</div><div class="lbl">Ubicación</div></div>
+      <div class="stat"><div class="num">SINPE</div><div class="lbl">Pago fácil</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTOS -->
+<section id="productos">
+  <div class="section">
     <div class="section-title">🛍 Productos</div>
+    <div class="section-sub">Ropa deportiva y suplementos de calidad</div>
+    <div class="section-divider"></div>
+    <div class="cats">
+      <button class="cat-btn active" onclick="filterCat('todos',this)">Todos</button>
+      <button class="cat-btn" onclick="filterCat('ropa',this)">👕 Ropa</button>
+      <button class="cat-btn" onclick="filterCat('suplementos',this)">💊 Suplementos</button>
+      <button class="cat-btn" onclick="filterCat('tenis',this)">👟 Tenis</button>
+      <button class="cat-btn" onclick="filterCat('conjuntos',this)">🩱 Conjuntos</button>
+    </div>
+    <div class="product-grid" id="productGrid"></div>
   </div>
+</section>
 
-</div>
-
-<div id="modal">
-  <div class="modal-content">
-    <span class="close" onclick="toggleCart()">✕</span>
-    <h2>Carrito</h2>
-    <div id="cartItems"></div>
-    <h3 id="total"></h3>
-    <button style="background:var(--accent);color:#000;font-weight:bold;" onclick="checkout()">Comprar por WhatsApp</button>
+<!-- PROMOCIONES -->
+<section id="promos" style="background:#0a0a0a;padding:0;">
+  <div class="section">
+    <div class="section-title">🔥 Promociones</div>
+    <div class="section-sub">Ofertas exclusivas en combos</div>
+    <div class="section-divider"></div>
+    <div class="promo-grid">
+      <div class="promo-card">
+        <div class="promo-icon">👕</div>
+        <h3>Combo Olímpicas</h3>
+        <p>Lleva más y ahorra más en camisetas olímpicas</p>
+        <div class="promo-price">3x<span>₡20,000</span></div>
+        <div class="promo-price">6x<span>₡30,000</span></div>
+      </div>
+      <div class="promo-card">
+        <div class="promo-icon">🏋️</div>
+        <h3>Combo Oversize</h3>
+        <p>Estilo urbano y deportivo al mejor precio</p>
+        <div class="promo-price">3x<span>₡25,000</span></div>
+      </div>
+      <div class="promo-card">
+        <div class="promo-icon">⚡</div>
+        <h3>Combo Deportivas</h3>
+        <p>Camisetas deportivas para entrenar fuerte</p>
+        <div class="promo-price">3x<span>₡25,000</span></div>
+      </div>
+      <div class="promo-card">
+        <div class="promo-icon">🩱</div>
+        <h3>Conjunto Deportivo</h3>
+        <p>Look completo para entrenar con estilo</p>
+        <div class="promo-price">Unidad <span>₡20,000</span></div>
+      </div>
+    </div>
   </div>
-</div>
+</section>
 
-<footer>Somos CiroSport. Todo lo que necesitas para una vida Fitness</footer>
-<a href="https://wa.me/50672028728" class="whatsapp-float" target="_blank">💬</a>
+<!-- GALERÍA -->
+<section id="galeria">
+  <div class="section">
+    <div class="section-title">📸 Galería</div>
+    <div class="section-sub">Nuestros productos en acción</div>
+    <div class="section-divider"></div>
+    <div class="gallery-grid" id="galleryGrid"></div>
+  </div>
+</section>
 
-<script>
-const colors=["Amarillo","Negro","Rojo","Azul","Gris","Blanco"];
-const sizes=["S","M","L","XL"];
-const tennisSizes=[36,37,38,39,40,41,42,43,44,45];
-const tennisBrands=["Nike","Reebok","Adidas","Cloud Monster","New Balance","Otros"];
-
-const products=[
-  {name:"Camiseta Olímpica",price:8000,type:"ropa",images:[
-    "https://res.cloudinary.com/dlz6uc574/image/upload/v1771643082/IMG_20260211_210919_uvpjmt.png",
-    "https://res.cloudinary.com/dlz6uc574/image/upload/v1771643079/IMG_20260211_210919_5_gowxms.png",
-    "https://res.cloudinary.com/dlz6uc574/image/upload/v1771643080/IMG_20260211_210919_1_tikcrp.png",
-    "https://res.cloudinary.com/dlz6uc574/image/upload/v1771643076/IMG_20260212_081532_1_ysp5po.png",
-    "https://res.cloudinary.com/dlz6uc574/image/upload/v1771643076/IMG_20260212_081532_3_nidlsp.png",
-    "https://res.cloudinary.com/dlz6uc574/image/upload/v1771965990/dc822db6d18892fe68d182003df68e05_16_n9vcgk.png",
-    "https://res.cloudinary.com/dlz6uc574/image/upload/v1771965956/dc822db6d18892fe68d182003df68e05_12_nluswt.png",
-    "https://res.cloudinary.com/dlz6uc574/image/upload/v1771965955/dc822db6d18892fe68d182003df68e05_15_uwqohl.png",
-    "https://res.cloudinary.com/dlz6uc574/image/upload/v1771965954/dc822db6d18892fe68d182003df68e05_13_g7m9pa.png",
-    "https://res.cloudinary.com/dlz6uc574/image/upload/v1771965931/dc822db6d18892fe68d182003df68e05_17_dpb95k.png",
-    "https://res.cloudinary.com/dlz6uc574/image/upload/v1771965901/dc822db6d18892fe68d182003df68e05_19_scdrmm.png",
-    "https://res.cloudinary.com/dlz6uc574/image/upload/v1771965899/dc822db6d18892fe68d182003df68e05_20_zt979e.png",
-    "https://res.cloudinary.com/dlz6uc574/image/upload/v1771965900/dc822db6d18892fe68d182003df68e05_21_kehvre.png",
-    "https://res.cloudinary.com/dlz6uc574/image/upload/v1771965897/dc822db6d18892fe68d182003df68e05_22_diwlrv.png",
-    "https://res.cloudinary.com/dlz6uc574/image/upload/v1771965892/dc822db6d18892fe68d182003df68e05_23_pzoq8e.png",
-    "https://res.cloudinary.com/dlz6uc574/image/upload/v1771965867/IMG-20260224-WA0039_bwv62w.jpg",
-    "https://res.cloudinary.com/dlz6uc574/image/upload/v1771965863/IMG-20260224-WA0040_s6dbw3.jpg",
-    "https://res.cloudinary.com/dlz6uc574/image/upload/v1771965860/IMG-20260224-WA0044_phqelm.jpg"
-  ]},
-  {name:"Camiseta Oversize",price:12000,type:"ropa",images:[
-    "https://res.cloudinary.com/dlz6uc574/image/upload/v1771645776/Screenshot_20260103_144217_com_instagram_android_InstagramMainActivity_5_xsc59h.png",
-    "https://res.cloudinary.com/dlz6uc574/image/upload/v1771645355/6362f18afa2e9fef922b0c43ea94f871_trka37.png",
-    "https://res.cloudinary.com/dlz6uc574/image/upload/v1771645514/Screenshot_20260103_144217_com_instagram_android_InstagramMainActivity_3_gnnl1q.png",
-    "https://res.cloudinary.com/dlz6uc574/image/upload/v1771645776/Screenshot_20260103_144217_com_instagram_android_InstagramMainActivity_6_q6eobs.png",
-    "https://res.cloudinary.com/dlz6uc574/image/upload/v1771645779/Screenshot_20260103_144217_com_instagram_android_InstagramMainActivity_4_cvp1ov.png"
-  ]},
-  {name:"Camiseta Deportiva",price:8000,type:"ropa",images:[
-    "https://res.cloudinary.com/dlz6uc574/image/upload/v1771646007/Photoroom-20250301_223811_mpctyd.png",
-    "https://res.cloudinary.com/dlz6uc574/image/upload/v1771645955/Photoroom-20250301_223509_f8pykj.png",
-    "https://res.cloudinary.com/dlz6uc574/image/upload/v1771646038/IMG_20250404_210953_2_w6y9tr.png",
-    "https://res.cloudinary.com/dlz6uc574/image/upload/v1771645970/Photoroom-20250301_223643_i8npdv.png",
-    "https://res.cloudinary.com/dlz6uc574/image/upload/v1771645981/Photoroom-20250301_223716_fgxqr2.png"
-  ]},
-  {name:"Tenis Deportivos",price:25000,type:"tenis",images:[
-    "https://res.cloudinary.com/dlz6uc574/image/upload/v1771648158/IMG-20260212-WA0211_nwlbyj.jpg",
-    "https://res.cloudinary.com/dlz6uc574/image/upload/v1771648154/IMG-20260212-WA0214_huokan.jpg",
-    "https://res.cloudinary.com/dlz6uc574/image/upload/v1771648138/Screenshot_20260212_142115_com_whatsapp_StatusPlaybackActivity_nupuhq.jpg",
-    "https://res.cloudinary.com/dlz6uc574/image/upload/v1771648133/Screenshot_20260212_142137_com_whatsapp_StatusPlaybackActivity_fggfal.jpg",
-    "https://res.cloudinary.com/dlz6uc574/image/upload/v1771648138/IMG-20260212-WA0209_ihassa.jpg",
-    "https://res.cloudinary.com/dlz6uc574/image/upload/v1771648127/Screenshot_20260205_142559_com_whatsapp_StatusPlaybackActivity_lgkrnz.jpg",
-    "https://res.cloudinary.com/dlz6uc574/image/upload/v1771648131/Screenshot_20260205_142607_com_whatsapp_StatusPlaybackActivity_y0r8ja.jpg",
-    "https://res.cloudinary.com/dlz6uc574/image/upload/v1771648117/Screenshot_20260205_142603_com_whatsapp_StatusPlaybackActivity_ozk60q.jpg"
-  ]},
-  {name:"Conjuntos Deportivos",price:20000,type:"conj",images:[
-    "https://res.cloudinary.com/dlz6uc574/image/upload/v1771646079/Photoroom-20250224_235848_pillqf.png",
-    "https://res.cloudinary.com/dlz6uc574/image/upload/v1771646193/Photoroom-20250224_233715_elc9du.png",
-    "https://res.cloudinary.com/dlz6uc574/image/upload/v1771646017/Photoroom-20250225_000142_luy730.png",
-    "https://res.cloudinary.com/dlz6uc574/image/upload/v1771646019/Photoroom-20250224_235953_lzcedw.png",
-    "https://res.cloudinary.com/dlz6uc574/image/upload/v1771646052/Photoroom-20250225_000044_rakgft.png",
-    "https://res.cloudinary.com/dlz6uc574/image/upload/v1771646092/Photoroom-20250224_235917_llo27n.png",
-    "https://res.cloudinary.com/dlz6uc574/image/upload/v1771646178/Photoroom-20250224_233647_nnihan.png",
-    "https://res.cloudinary.com/dlz6uc574/image/upload/v1771646167/Photoroom-20250224_233613_ryjvcd.png"
-  ]},
-  {name:"Proteína",price:50000,type:"prote",images:[
-    "https://res.cloudinary.com/dlz6uc574/image/upload/v1771646164/IMG-20250826-WA0008_ezryvm.png",
-    "https://res.cloudinary.com/dlz6uc574/image/upload/v1771646285/IMG-20250620-WA0021_fy6e0u.png",
-    "https://res.cloudinary.com/dlz6uc574/image/upload/v1771646251/IMG-20250620-WA0018_iinpf8.png",
-    "https://res.cloudinary.com/dlz6uc574/image/upload/v1771646205/IMG-20250826-WA0230_molicz.png"
-  ]},
-  {name:"Creatina",price:17500,type:"crea",images:[
-    "https://res.cloudinary.com/dlz6uc574/image/upload/v1771645882/IMG_20250531_150610_a8hlye.png",
-    "https://res.cloudinary.com/dlz6uc574/image/upload/v1771645871/IMG_20250530_124703_acwhpd.png",
-    "https://res.cloudinary.com/dlz6uc574/image/upload/v1771646321/IMG_20250604_154551_leznbs.png",
-    "https://res.cloudinary.com/dlz6uc574/image/upload/v1771646188/1754318027391_xckwfg.png"
-  ]}
-];
-
-let container=document.getElementById("productos");
-let cart=[];
-
-products.forEach((p,i)=>{
-  let extra='';
-  if(p.type==='ropa'){
-    extra+=`<div style="margin:6px 0">Colores: ${colors.map(c=>`<span class="color-btn" data-index="${i}" data-color="${c}" onclick="selectColor(this,${i})">${c}</span>`).join('')}</div>`;
-    extra+=`<div style="margin:6px 0">Tallas: ${sizes.map(s=>`<span class="size-btn" data-index="${i}" data-size="${s}" onclick="selectSize(this,${i})">${s}</span>`).join('')}</div>`;
-  }
-  if(p.type==='conj'){
-    extra+=`<div style="margin:6px 0">Tallas: ${sizes.map(s=>`<span class="size-btn" data-index="${i}" data-size="${s}" onclick="selectSize(this,${i})">${s}</span>`).join('')}</div>`;
-  }
-  if(p.type==='tenis'){
-    extra+=`<div style="margin:6px 0">Marca: <select id='brand${i}' style="background:#222;color:#fff;padding:6px;border-radius:8px;border:none;">${tennisBrands.map(b=>`<option>${b}</option>`).join('')}</select></div>`;
-    extra+=`<div style="margin:6px 0">Talla: <select id='tallaTenis${i}' style="background:#222;color:#fff;padding:6px;border-radius:8px;border:none;">${tennisSizes.map(t=>`<option>${t}</option>`).join('')}</select></div>`;
-  }
-  extra+=`<div class="cant-container"><button onclick="decQty(${i})">-</button><input type="number" id="qty${i}" value="1" min="1"><button onclick="incQty(${i})">+</button></div>`;
-
-  container.innerHTML+=`
-    <div class="product">
-      <h2>${p.name}</h2>
-      <div class="carousel">
-        <div class="carousel-track" id="track${i}">${p.images.map(img=>`<img src="${img}" loading="lazy">`).join('')}</div>
-        <div class="carousel-controls">
-          <span onclick="prevSlide(${i})">❮</span>
-          <span onclick="nextSlide(${i})">❯</span>
+<!-- CONTACTO -->
+<section id="contacto" style="background:#090909;">
+  <div class="section">
+    <div class="section-title">📞 Contacto</div>
+    <div class="section-sub">Estamos aquí para ayudarte</div>
+    <div class="section-divider"></div>
+    <div class="contact-grid">
+      <div>
+        <div class="contact-card">
+          <h3>📍 Información</h3>
+          <div class="contact-item">
+            <div class="contact-icon">👤</div>
+            <div class="contact-info">
+              <div class="label">Propietario</div>
+              <div class="value">Fernando Angulo Castro</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📱</div>
+            <div class="contact-info">
+              <div class="label">Teléfono</div>
+              <div class="value"><a href="tel:+50670082741">7008-2741</a></div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📧</div>
+            <div class="contact-info">
+              <div class="label">Email</div>
+              <div class="value"><a href="mailto:paul.angulo2015@gmail.com">paul.angulo2015@gmail.com</a></div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div class="contact-info">
+              <div class="label">Ubicación</div>
+              <div class="value"><a href="https://waze.com/ul?q=Escazu+Centro+Costa+Rica" target="_blank">Escazú Centro, Costa Rica 🗺</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="sinpe-box">
+          <h3>💳 Pago por SINPE Móvil</h3>
+          <div class="sinpe-number">7008-2741</div>
+          <div class="sinpe-name">Fernando Angulo Castro</div>
+          <button class="sinpe-copy" onclick="copySinpe()">📋 Copiar número</button>
         </div>
       </div>
-      ${extra}
-      <div class="price">₡${p.price.toLocaleString()}</div>
-      <button style="background:var(--accent);color:#000;font-weight:bold;" onclick="addToCart(${i})">🛒 Agregar al carrito</button>
-    </div>`;
-});
+      <div class="contact-card">
+        <h3>🔗 Redes Sociales</h3>
+        <div class="social-btns">
+          <a href="https://wa.me/50670082741" target="_blank" class="social-btn wa">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="wa"> WhatsApp — 7008-2741
+          </a>
+          <a href="https://www.instagram.com/tshir_t31?igsh=ZmdxajZqbWQ1b2Vq" target="_blank" class="social-btn ig">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="ig"> Instagram — @tshir_t31
+          </a>
+          <a href="https://waze.com/ul?q=Escazu+Centro+Costa+Rica" target="_blank" class="social-btn waze">
+            <img src="https://cdn-icons-png.flaticon.com/512/2038/2038479.png" alt="waze"> Cómo llegar — Escazú Centro
+          </a>
+        </div>
+        <div style="margin-top:30px;">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.7!2d-84.1396!3d9.9319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e3b5e5a5a5a5%3A0x0!2sEscaz%C3%BA%20Centro!5e0!3m2!1ses!2scr!4v1"
+            width="100%" height="220" style="border:0;border-radius:14px;filter:grayscale(80%) invert(90%);" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-let idx=Array(products.length).fill(0);
-function updateSlide(i){document.getElementById("track"+i).style.transform=`translateX(-${idx[i]*100}%)`;}
-function nextSlide(i){idx[i]=(idx[i]+1)%products[i].images.length;updateSlide(i);}
-function prevSlide(i){idx[i]=(idx[i]-1+products[i].images.length)%products[i].images.length;updateSlide(i);}
-function incQty(i){let el=document.getElementById("qty"+i);el.value=parseInt(el.value)+1;}
-function decQty(i){let el=document.getElementById("qty"+i);if(el.value>1)el.value=parseInt(el.value)-1;}
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-text">CiroSport</div>
+        <p>Tu tienda de ropa deportiva y suplementos en Escazú, Costa Rica. Calidad, estilo y precio al alcance de todos.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#promos">Promociones</a>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <a href="tel:+50670082741">📱 7008-2741</a>
+        <a href="mailto:paul.angulo2015@gmail.com">✉️ Email</a>
+        <a href="https://www.instagram.com/tshir_t31" target="_blank">📷 Instagram</a>
+        <a href="https://waze.com/ul?q=Escazu+Centro" target="_blank">📍 Escazú Centro</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 <span>CiroSport</span> — Todos los derechos reservados</p>
+      <p>Hecho con 💚 en Costa Rica</p>
+    </div>
+  </div>
+</footer>
 
-let selectedColors={};let selectedSizes={};
-function selectColor(el,i){document.querySelectorAll(`.color-btn[data-index='${i}']`).forEach(e=>e.classList.remove('selected'));el.classList.add('selected');selectedColors[i]=el.dataset.color;}
-function selectSize(el,i){document.querySelectorAll(`.size-btn[data-index='${i}']`).forEach(e=>e.classList.remove('selected'));el.classList.add('selected');selectedSizes[i]=el.dataset.size;}
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/50670082741" class="wa-float" target="_blank">💬</a>
 
-function addToCart(i){
-  let p=products[i];
-  let color=(p.type==='ropa')?selectedColors[i]||colors[0]:'';
-  let size=(p.type==='ropa'||p.type==='conj')?selectedSizes[i]||sizes[0]:(p.type==='tenis')?document.getElementById('tallaTenis'+i).value:'';
-  let brand=(p.type==='tenis')?document.getElementById('brand'+i).value:'';
-  let qty=parseInt(document.getElementById('qty'+i).value);
-  let name=p.name+(color?` - ${color}`:'')+( size?` - Talla ${size}`:'')+( brand?` - ${brand}`:'');
-  cart.push({name,price:p.price,qty});
-  updateCartCount();
-  alert("✅ Agregado: "+name);
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<!-- PRODUCT MODAL -->
+<div class="product-modal" id="productModal">
+  <div class="pm-overlay" onclick="closeModal()"></div>
+  <div class="pm-content">
+    <button class="pm-close" onclick="closeModal()">✕</button>
+    <div class="pm-grid" id="pmGrid"></div>
+  </div>
+</div>
+
+<script>
+// ═══════════════════════════════════════════════════════
+// DATA
+// ═══════════════════════════════════════════════════════
+const PRODUCTS = [
+  {
+    id:0, slug:'camiseta-olimpica',
+    name:'Camiseta Olímpica', price:8000,
+    cat:'ropa', badge:'⭐ Popular',
+    desc:'Camiseta olímpica de alto rendimiento. Ideal para entrenar, correr y cualquier actividad deportiva. Disponible en varios colores y tallas.',
+    promos:'3x₡20,000 | 6x₡30,000',
+    colors:['Negro','Blanco','Rojo','Azul','Gris','Amarillo','Verde'],
+    sizes:['S','M','L','XL','XXL'],
+    images:[
+      'https://res.cloudinary.com/dlz6uc574/image/upload/v1771965990/dc822db6d18892fe68d182003df68e05_16_n9vcgk.png',
+      'https://res.cloudinary.com/dlz6uc574/image/upload/v1771965956/dc822db6d18892fe68d182003df68e05_12_nluswt.png',
+      'https://res.cloudinary.com/dlz6uc574/image/upload/v1771965955/dc822db6d18892fe68d182003df68e05_15_uwqohl.png',
+      'https://res.cloudinary.com/dlz6uc574/image/upload/v1771965954/dc822db6d18892fe68d182003df68e05_13_g7m9pa.png',
+      'https://res.cloudinary.com/dlz6uc574/image/upload/v1771965931/dc822db6d18892fe68d182003df68e05_17_dpb95k.png',
+      'https://res.cloudinary.com/dlz6uc574/image/upload/v1771965901/dc822db6d18892fe68d182003df68e05_19_scdrmm.png',
+      'https://res.cloudinary.com/dlz6uc574/image/upload/v1771965899/dc822db6d18892fe68d182003df68e05_20_zt979e.png',
+      'https://res.cloudinary.com/dlz6uc574/image/upload/v1771965900/dc822db6d18892fe68d182003df68e05_21_kehvre.png',
+      'https://res.cloudinary.com/dlz6uc574/image/upload/v1771965897/dc822db6d18892fe68d182003df68e05_22_diwlrv.png',
+      'https://res.cloudinary.com/dlz6uc574/image/upload/v1771965892/dc822db6d18892fe68d182003df68e05_23_pzoq8e.png',
+      'https://res.cloudinary.com/dlz6uc574/image/upload/v1771965867/IMG-20260224-WA0039_bwv62w.jpg',
+      'https://res.cloudinary.com/dlz6uc574/image/upload/v1771965863/IMG-20260224-WA0040_s6dbw3.jpg',
+      'https://res.cloudinary.com/dlz6uc574/image/upload/v1771965860/IMG-20260224-WA0044_phqelm.jpg'
+    ]
+  },
+  {
+    id:1, slug:'camiseta-oversize',
+    name:'Camiseta Oversize', price:12000,
+    cat:'ropa', badge:'🔥 Tendencia',
+    desc:'Camiseta oversize con estilo urbano y deportivo. Corte amplio, tela suave y cómoda para el día a día o el gym.',
+    promos:'3x₡25,000',
+    colors:['Negro','Blanco','Gris','Verde','Azul'],
+    sizes:['S','M','L','XL','XXL'],
+    images:[
+      'https://res.cloudinary.com/dlz6uc574/image/upload/v1771645776/Screenshot_20260103_144217_com_instagram_android_InstagramMainActivity_5_xsc59h.png',
+      'https://res.cloudinary.com/dlz6uc574/image/upload/v1771645355/6362f18afa2e9fef922b0c43ea94f871_trka37.png',
+      'https://res.cloudinary.com/dlz6uc574/image/upload/v1771645514/Screenshot_20260103_144217_com_instagram_android_InstagramMainActivity_3_gnnl1q.png',
+      'https://res.cloudinary.com/dlz6uc574/image/upload/v1771645776/Screenshot_20260103_144217_com_instagram_android_InstagramMainActivity_6_q6eobs.png',
+      'https://res.cloudinary.com/dlz6uc574/image/upload/v1771645779/Screenshot_20260103_144217_com_instagram_android_InstagramMainActivity_4_cvp1ov.png'
+    ]
+  },
+  {
+    id:2, slug:'juego-deportivo',
+    name:'Juego Deportivo', price:20000,
+    cat:'conjuntos', badge:'💎 Premium',
+    desc:'Conjunto deportivo completo. Incluye camiseta y short coordinados. Ideal para entrenar, correr o actividades al aire libre.',
+    promos:'',
+    colors:['Negro','Azul','Gris','Verde'],
+    sizes:['S','M','L','XL'],
+    images:[
+      'https://res.cloudinary.com/dlz6uc574/image/upload/v1771646079/Photoroom-20250224_235848_pillqf.png',
+      'https://res.cloudinary.com/dlz6uc574/image/upload/v1771646193/Photoroom-20250224_233715_elc9du.png',
+      'https://res.cloudinary.com/dlz6uc574/image/upload/v1771646017/Photoroom-20250225_000142_luy730.png',
+      'https://res.cloudinary.com/dlz6uc574/image/upload/v1771646019/Photoroom-20250224_235953_lzcedw.png',
+      'https://res.cloudinary.com/dlz6uc574/image/upload/v1771646052/Photoroom-20250225_000044_rakgft.png',
+      'https://res.cloudinary.com/dlz6uc574/image/upload/v1771646092/Photoroom-20250224_235917_llo27n.png',
+      'https://res.cloudinary.com/dlz6uc574/image/upload/v1771646178/Photoroom-20250224_233647_nnihan.png',
+      'https://res.cloudinary.com/dlz6uc574/image/upload/v1771646167/Photoroom-20250224_233613_ryjvcd.png'
+    ]
+  },
+  {
+    id:3, slug:'camiseta-deportiva',
+    name:'Camiseta Deportiva', price:10000,
+    cat:'ropa', badge:'',
+    desc:'Camiseta deportiva de alto rendimiento. Tela transpirable y ligera, perfecta para cualquier disciplina deportiva.',
+    promos:'3x₡25,000',
+    colors:['Negro','Blanco','Rojo','Azul','Verde'],
+    sizes:['S','M','L','XL'],
+    images:[
+      'https://res.cloudinary.com/dlz6uc574/image/upload/v1771646007/Photoroom-20250301_223811_mpctyd.png',
+      'https://res.cloudinary.com/dlz6uc574/image/upload/v1771645955/Photoroom-20250301_223509_f8pykj.png',
+      'https://res.cloudinary.com/dlz6uc574/image/upload/v1771646038/IMG_20250404_210953_2_w6y9tr.png',
+      'https://res.cloudinary.com/dlz6uc574/image/upload/v1771645970/Photoroom-20250301_223643_i8npdv.png',
+      'https://res.cloudinary.com/dlz6uc574/image/upload/v1771645981/Photoroom-20250301_223716_fgxqr2.png'
+    ]
+  },
+  {
+    id:4, slug:'creatina',
+    name:'Creatina', price:17500,
+    cat:'suplementos', badge:'💊 Suplemento',
+    desc:'Creatina monohidratada de alta pureza. Mejora tu rendimiento, fuerza y recuperación muscular. Ideal para atletas y deportistas.',
+    promos:'',
+    colors:[],
+    sizes:[],
+    images:[
+      'https://res.cloudinary.com/dlz6uc574/image/upload/v1771645882/IMG_20250531_150610_a8hlye.png',
+      'https://res.cloudinary.com/dlz6uc574/image/upload/v1771645871/IMG_20250530_124703_acwhpd.png',
+      'https://res.cloudinary.com/dlz6uc574/image/upload/v1771646321/IMG_20250604_154551_leznbs.png',
+      'https://res.cloudinary.com/dlz6uc574/image/upload/v1771646188/1754318027391_xckwfg.png'
+    ]
+  },
+  {
+    id:5, slug:'proteina',
+    name:'Proteína', price:20000,
+    cat:'suplementos', badge:'💪 Suplemento',
+    desc:'Proteína de alta calidad para acelerar tu recuperación y ganar músculo. Diferentes sabores disponibles.',
+    promos:'',
+    colors:[],
+    sizes:[],
+    images:[
+      'https://res.cloudinary.com/dlz6uc574/image/upload/v1771646164/IMG-20250826-WA0008_ezryvm.png',
+      'https://res.cloudinary.com/dlz6uc574/image/upload/v1771646285/IMG-20250620-WA0021_fy6e0u.png',
+      'https://res.cloudinary.com/dlz6uc574/image/upload/v1771646251/IMG-20250620-WA0018_iinpf8.png',
+      'https://res.cloudinary.com/dlz6uc574/image/upload/v1771646205/IMG-20250826-WA0230_molicz.png'
+    ]
+  },
+  {
+    id:6, slug:'tenis-deportivos',
+    name:'Tenis Deportivos', price:25000,
+    cat:'tenis', badge:'👟 Tenis',
+    desc:'Tenis deportivos de alta calidad. Comodidad y estilo para entrenar o el día a día. Disponibles en múltiples tallas.',
+    promos:'',
+    colors:['Negro','Blanco','Gris'],
+    sizes:['36','37','38','39','40','41','42','43','44','45'],
+    images:[
+      'https://res.cloudinary.com/dlz6uc574/image/upload/v1771648158/IMG-20260212-WA0211_nwlbyj.jpg',
+      'https://res.cloudinary.com/dlz6uc574/image/upload/v1771648154/IMG-20260212-WA0214_huokan.jpg',
+      'https://res.cloudinary.com/dlz6uc574/image/upload/v1771648138/Screenshot_20260212_142115_com_whatsapp_StatusPlaybackActivity_nupuhq.jpg',
+      'https://res.cloudinary.com/dlz6uc574/image/upload/v1771648133/Screenshot_20260212_142137_com_whatsapp_StatusPlaybackActivity_fggfal.jpg',
+      'https://res.cloudinary.com/dlz6uc574/image/upload/v1771648138/IMG-20260212-WA0209_ihassa.jpg',
+      'https://res.cloudinary.com/dlz6uc574/image/upload/v1771648127/Screenshot_20260205_142559_com_whatsapp_StatusPlaybackActivity_lgkrnz.jpg',
+      'https://res.cloudinary.com/dlz6uc574/image/upload/v1771648131/Screenshot_20260205_142607_com_whatsapp_StatusPlaybackActivity_y0r8ja.jpg',
+      'https://res.cloudinary.com/dlz6uc574/image/upload/v1771648117/Screenshot_20260205_142603_com_whatsapp_StatusPlaybackActivity_ozk60q.jpg'
+    ]
+  }
+];
+
+const GALLERY = [
+  ...PRODUCTS[0].images.slice(0,3),
+  ...PRODUCTS[1].images.slice(0,2),
+  ...PRODUCTS[2].images.slice(0,3),
+  ...PRODUCTS[3].images.slice(0,2),
+  PRODUCTS[4].images[0],
+  PRODUCTS[5].images[0],
+  PRODUCTS[6].images[0],
+  PRODUCTS[6].images[1],
+];
+
+// ═══════════════════════════════════════════════════════
+// CART STATE
+// ═══════════════════════════════════════════════════════
+let cart = [];
+let currentProduct = null;
+let pmImgIndex = 0;
+let pmQty = 1;
+let pmColor = '';
+let pmSize = '';
+
+// ═══════════════════════════════════════════════════════
+// RENDER PRODUCTS
+// ═══════════════════════════════════════════════════════
+function renderProducts(list) {
+  const grid = document.getElementById('productGrid');
+  if (!list.length) {
+    grid.innerHTML = '<p style="color:#555;grid-column:1/-1">No hay productos en esta categoría.</p>';
+    return;
+  }
+  grid.innerHTML = list.map(p => `
+    <div class="product-card" onclick="openModal(${p.id})">
+      <div class="card-img-wrap">
+        <img src="${p.images[0]}" alt="${p.name}" loading="lazy">
+        ${p.badge ? `<span class="card-badge">${p.badge}</span>` : ''}
+        <div class="card-overlay"><span>Ver Producto</span></div>
+      </div>
+      <div class="card-body">
+        <h3>${p.name}</h3>
+        <div class="card-price">₡${p.price.toLocaleString()}</div>
+        ${p.promos ? `<div class="card-promo">🔥 ${p.promos}</div>` : ''}
+      </div>
+    </div>
+  `).join('');
 }
 
-function updateCartCount(){
-  let c=document.getElementById("cartCount");
-  let total=cart.reduce((a,b)=>a+b.qty,0);
-  c.innerText=total;c.style.display=total>0?"block":"none";
+function filterCat(cat, el) {
+  document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+  el.classList.add('active');
+  const filtered = cat === 'todos' ? PRODUCTS : PRODUCTS.filter(p => p.cat === cat);
+  renderProducts(filtered);
 }
 
-function toggleCart(){
-  let m=document.getElementById("modal");
-  m.style.display=(m.style.display==="flex")?"none":"flex";
+// ═══════════════════════════════════════════════════════
+// RENDER GALLERY
+// ═══════════════════════════════════════════════════════
+function renderGallery() {
+  document.getElementById('galleryGrid').innerHTML = GALLERY.map(img => `
+    <div class="gallery-item">
+      <img src="${img}" alt="galería" loading="lazy">
+    </div>
+  `).join('');
+}
+
+// ═══════════════════════════════════════════════════════
+// PRODUCT MODAL
+// ═══════════════════════════════════════════════════════
+function openModal(id) {
+  currentProduct = PRODUCTS.find(p => p.id === id);
+  pmImgIndex = 0; pmQty = 1; pmColor = ''; pmSize = '';
+  renderModal();
+  document.getElementById('productModal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  document.getElementById('productModal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function renderModal() {
+  const p = currentProduct;
+  const colorsHTML = p.colors.length ? `
+    <div class="pm-label">Color</div>
+    <div class="options-row">
+      ${p.colors.map(c => `<button class="opt-btn" onclick="selectPmColor(this,'${c}')">${c}</button>`).join('')}
+    </div>` : '';
+  const sizesHTML = p.sizes.length ? `
+    <div class="pm-label">${p.cat === 'tenis' ? 'Talla (EUR)' : 'Talla'}</div>
+    <div class="options-row">
+      ${p.sizes.map(s => `<button class="opt-btn" onclick="selectPmSize(this,'${s}')">${s}</button>`).join('')}
+    </div>` : '';
+  const promoHTML = p.promos ? `<div class="pm-promos"><h4>🔥 Promos disponibles</h4><p>${p.promos}</p></div>` : '';
+
+  document.getElementById('pmGrid').innerHTML = `
+    <div class="pm-imgs">
+      <img id="pmMainImg" src="${p.images[0]}" alt="${p.name}" class="pm-main-img">
+      <div class="pm-thumbs">
+        ${p.images.map((img,i) => `<img src="${img}" class="${i===0?'active':''}" onclick="setPmImg(${i},this)">`).join('')}
+      </div>
+    </div>
+    <div class="pm-info">
+      <div class="pm-name">${p.name}</div>
+      <div class="pm-price">₡${p.price.toLocaleString()}</div>
+      <div class="pm-desc">${p.desc}</div>
+      ${colorsHTML}
+      ${sizesHTML}
+      <div class="pm-label">Cantidad</div>
+      <div class="pm-qty">
+        <button onclick="changePmQty(-1)">−</button>
+        <span id="pmQtyDisplay">1</span>
+        <button onclick="changePmQty(1)">+</button>
+      </div>
+      <button class="pm-add" onclick="addToCartFromModal()">🛒 Agregar al carrito</button>
+      ${promoHTML}
+    </div>
+  `;
+}
+
+function setPmImg(i, el) {
+  pmImgIndex = i;
+  document.getElementById('pmMainImg').src = currentProduct.images[i];
+  document.querySelectorAll('.pm-thumbs img').forEach(t => t.classList.remove('active'));
+  el.classList.add('active');
+}
+
+function selectPmColor(el, color) {
+  pmColor = color;
+  document.querySelectorAll('.pm-info .opt-btn').forEach(b => { if(b.textContent === color || b.dataset.type==='color') {} });
+  el.closest('.options-row').querySelectorAll('.opt-btn').forEach(b => b.classList.remove('selected'));
+  el.classList.add('selected');
+}
+
+function selectPmSize(el, size) {
+  pmSize = size;
+  el.closest('.options-row').querySelectorAll('.opt-btn').forEach(b => b.classList.remove('selected'));
+  el.classList.add('selected');
+}
+
+function changePmQty(d) {
+  pmQty = Math.max(1, pmQty + d);
+  document.getElementById('pmQtyDisplay').textContent = pmQty;
+}
+
+function addToCartFromModal() {
+  const p = currentProduct;
+  let label = p.name;
+  if (pmColor) label += ` — ${pmColor}`;
+  if (pmSize) label += ` T.${pmSize}`;
+  cart.push({ id: p.id, name: label, price: p.price, qty: pmQty, img: p.images[0] });
+  updateCartUI();
+  closeModal();
+  showToast(`✅ ${p.name} agregado al carrito`);
+}
+
+// ═══════════════════════════════════════════════════════
+// CART
+// ═══════════════════════════════════════════════════════
+function toggleCart() {
+  const d = document.getElementById('cartDrawer');
+  const isOpen = d.style.right === '0px';
+  if (isOpen) {
+    d.style.right = '-420px';
+    document.getElementById('overlay').style.display = 'none';
+    document.body.style.overflow = '';
+  } else {
+    d.style.right = '0px';
+    document.getElementById('overlay').style.display = 'block';
+    document.body.style.overflow = 'hidden';
+  }
   renderCart();
 }
 
-function renderCart(){
-  let items=document.getElementById("cartItems");
-  let totalEl=document.getElementById("total");
-  items.innerHTML="";let total=0;
-  cart.forEach((p,i)=>{
-    items.innerHTML+=`<div style="margin:8px 0;border-bottom:1px solid #333;padding-bottom:8px;">${i+1}. ${p.name} x${p.qty} — ₡${(p.price*p.qty).toLocaleString()} <button style="background:#ff4444;color:#fff;border:none;border-radius:6px;padding:2px 8px;cursor:pointer;font-size:14px;width:auto;" onclick="removeFromCart(${i})">🗑</button></div>`;
-    total+=p.price*p.qty;
+function renderCart() {
+  const el = document.getElementById('cartItems');
+  if (!cart.length) {
+    el.innerHTML = '<div class="cart-empty"><div class="icon">🛒</div><p>Tu carrito está vacío</p></div>';
+    return;
+  }
+  el.innerHTML = cart.map((item, i) => `
+    <div class="cart-item">
+      <img src="${item.img}" alt="">
+      <div class="cart-item-info">
+        <h4>${item.name}</h4>
+        <div class="price">₡${(item.price * item.qty).toLocaleString()}</div>
+        <div class="qty-control">
+          <button onclick="changeCartQty(${i},-1)">−</button>
+          <span>${item.qty}</span>
+          <button onclick="changeCartQty(${i},1)">+</button>
+        </div>
+      </div>
+      <span class="cart-item-del" onclick="removeFromCart(${i})">🗑</span>
+    </div>
+  `).join('');
+}
+
+function changeCartQty(i, d) {
+  cart[i].qty = Math.max(1, cart[i].qty + d);
+  updateCartUI(); renderCart();
+}
+
+function removeFromCart(i) {
+  cart.splice(i, 1);
+  updateCartUI(); renderCart();
+}
+
+function updateCartUI() {
+  const total = cart.reduce((a, b) => a + b.qty, 0);
+  const amount = cart.reduce((a, b) => a + b.price * b.qty, 0);
+  const cc = document.getElementById('cartCount');
+  cc.textContent = total;
+  cc.style.display = total > 0 ? 'block' : 'none';
+  document.getElementById('cartTotal').textContent = '₡' + amount.toLocaleString();
+}
+
+function checkout() {
+  if (!cart.length) { showToast('⚠️ Tu carrito está vacío', 'warn'); return; }
+  let msg = 'Hola CiroSport! 👋 Quiero hacer el siguiente pedido:%0A%0A';
+  let total = 0;
+  cart.forEach((p, i) => {
+    msg += `${i+1}. ${p.name} x${p.qty} — ₡${(p.price*p.qty).toLocaleString()}%0A`;
+    total += p.price * p.qty;
   });
-  totalEl.innerText="Total: ₡"+total.toLocaleString();
+  msg += `%0A💰 *Total: ₡${total.toLocaleString()}*%0A%0APago por SINPE Móvil al 7008-2741`;
+  window.open(`https://wa.me/50670082741?text=${msg}`, '_blank');
 }
 
-function removeFromCart(i){cart.splice(i,1);updateCartCount();renderCart();}
-
-function checkout(){
-  if(cart.length===0){alert("Carrito vacío");return;}
-  let msg="Hola! Quiero comprar:%0A";let total=0;
-  cart.forEach((p,i)=>{msg+=(i+1)+". "+p.name+" x"+p.qty+" - ₡"+p.price*p.qty+"%0A";total+=p.price*p.qty;});
-  msg+="%0ATotal: ₡"+total+"%0APago por SINPE al 7008-2741";
-  window.open("https://wa.me/50672028728?text="+msg,"_blank");
+// ═══════════════════════════════════════════════════════
+// MENU / OVERLAY
+// ═══════════════════════════════════════════════════════
+function toggleMenu() {
+  const nav = document.getElementById('mobileNav');
+  const ov = document.getElementById('overlay');
+  if (nav.style.left === '0px') {
+    nav.style.left = '-100%';
+    ov.style.display = 'none';
+  } else {
+    nav.style.left = '0px';
+    ov.style.display = 'block';
+  }
 }
 
-function toggleMenu(){
-  let m=document.getElementById("menu"),o=document.getElementById("overlay");
-  if(m.style.left==="0px"){m.style.left="-100%";o.style.display="none";}
-  else{m.style.left="0px";o.style.display="block";}
+function closeAll() {
+  document.getElementById('mobileNav').style.left = '-100%';
+  document.getElementById('cartDrawer').style.right = '-420px';
+  document.getElementById('overlay').style.display = 'none';
+  document.body.style.overflow = '';
 }
-function goInicio(){toggleMenu();window.scrollTo({top:0,behavior:"smooth"});}
-function goPromos(){toggleMenu();document.getElementById("promos").scrollIntoView({behavior:"smooth"});}
-function goGaleria(){toggleMenu();document.getElementById("galeria").scrollIntoView({behavior:"smooth"});}
-function goProductos(){toggleMenu();document.getElementById("productos").scrollIntoView({behavior:"smooth"});}
+
+function setActive(el) {
+  document.querySelectorAll('.header-nav a').forEach(a => a.classList.remove('active'));
+  el.classList.add('active');
+}
+
+// ═══════════════════════════════════════════════════════
+// UTILS
+// ═══════════════════════════════════════════════════════
+function copySinpe() {
+  navigator.clipboard.writeText('70082741').then(() => showToast('📋 Número copiado: 7008-2741'));
+}
+
+let toastTimer;
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.style.display = 'block';
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.style.display = 'none', 3200);
+}
+
+// ═══════════════════════════════════════════════════════
+// INIT
+// ═══════════════════════════════════════════════════════
+renderProducts(PRODUCTS);
+renderGallery();
 </script>
 </body>
 </html>
